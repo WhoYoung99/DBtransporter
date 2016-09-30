@@ -21,18 +21,27 @@ def exec_cmd(cmd, debug=False):
 
 
 def postgre2sqlite(f_name):
-    f_type = f.replace('_', '.').split('.')[-2]
+    tb_name = f.name.split('.')[0]
+    f_type = f_name.replace('_', '.').split('.')[-2]
     with open(f_name) as file_:
         raw = file_.readlines()
-    ## Remove SET, comments
-    clean_data = [l for l in raw if not (l.startswith('--') or l.startswith('SET') or l.startswith('\n'))]
-
+    
     if f_type == 'schema':
-        do somthing
+        # Locate the CREATE TABLE
+        aim = "CREATE TABLE {0} (\n".format(tb_name)
+        ind_start = raw.index(aim)
+        ind_end = raw.index(");\n")
+        # Retrieve only CREATE TABLE part
+        clean_data = raw[ind_start:ind_end+1]
+        # Remove CONSTRAINT
+        if clean_data[-2].startswith('    CONSTRAINT '):
+            del clean_data[-2]
+
     elif f_type == 'data':
-        do somthing
+        for l in raw:
+            if l.startswith('COPY {0}'.format(tb_name))
     else:
-        print("Cannot detect file type, doing general cleanning now...")
+        print("Cannot detect file type, do it on your own...")
         
 
 
