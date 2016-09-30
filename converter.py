@@ -22,6 +22,11 @@ def exec_cmd(cmd, debug=False):
 
 def postgre2sqlite(f_name):
     f_type = f.replace('_', '.').split('.')[-2]
+    with open(f_name) as file_:
+        raw = file_.readlines()
+    ## Remove SET, comments
+    clean_data = [l for l in raw if not (l.startswith('--') or l.startswith('SET') or l.startswith('\n'))]
+
     if f_type == 'schema':
         do somthing
     elif f_type == 'data':
