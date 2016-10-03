@@ -103,8 +103,11 @@ def main():
     #
     if not os.path.isfile("db_dump.dat.decrypted"):
         command = "python decrypt_db_tool.py"
-        decrypt = exec_cmd(command)
-        print("[Pass] Finish db_dump decryption...")
+        ret = exec_cmd(command)
+        if ret == 0:
+            print("[Pass] Finish db_dump decryption...")
+        else:
+            sys.exit("[ERROR] Unable to decrypt db_dump, program abort...")
     else:
         print("[Pass] Decrypted dump file already exist...")
 
@@ -165,8 +168,11 @@ def main():
     # Create DB
     cur.executescript(schema_cleaned)
     # Import Data
-    cur.executemany("INSERT INTO tb_sandbox_result VALUES (?);", data_cleaned)
+    cur.executemany("INSERT INTO tb_sandbox_result (id, receivedtime, sha1, severity, overallseverity, report, filemd5, parentsha1, origfilename, malwaresourceip, malwaresourcehost, analyzetime, truefiletype, filesize, pcapready, dropsha1list, virusname, va_threat_category_ids, va_virusname_list) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);", data_cleaned)
     con.commit()
+
+    cur.execute('SELECT * FROM tb_sandbox_result LIMIT 2')
+    print(cur.fetchall())
     con.close()
 
 
