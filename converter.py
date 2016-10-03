@@ -155,6 +155,7 @@ def main():
             print(schema_cleaned)
             # exporting = writing_file(schema_cleaned, '{0}_Cschema'.format(table))
             data_cleaned = cleanup('{0}_data'.format(table))
+            data_cleaned = [tuple(i.split('\t')) for i in data_cleaned]
             # exporting = writing_file(data_cleaned, '{0}_Cdata'.format(table))
             print("[Pass] Finish pg_restore on table: {0}".format(table))
         else:
@@ -171,8 +172,8 @@ def main():
     cur.executemany("INSERT INTO tb_sandbox_result (id, receivedtime, sha1, severity, overallseverity, report, filemd5, parentsha1, origfilename, malwaresourceip, malwaresourcehost, analyzetime, truefiletype, filesize, pcapready, dropsha1list, virusname, va_threat_category_ids, va_virusname_list) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);", data_cleaned)
     con.commit()
 
-    cur.execute('SELECT * FROM tb_sandbox_result LIMIT 2')
-    print(cur.fetchall())
+    cur.execute('SELECT * FROM tb_sandbox_result')
+    print(len(cur.fetchall()))
     con.close()
 
 
