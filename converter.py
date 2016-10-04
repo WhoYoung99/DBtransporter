@@ -43,6 +43,21 @@ def ind_finder(words, content, reverse=False):
             counter += 1
     return None
 
+def root_table(table_name):
+    '''
+    Find the root table name, if none, return itself
+    '''
+    with open(table_name) as file_:
+        raw = file_.readlines()
+    
+    ind_root = ind_finder('INHERITS (', raw, reverse=True)
+    if ind_root == None:
+        return table_name
+    else:
+        root = raw[-(ind_root+1)][10:-3]
+        return "{0}_schema".format(root)
+
+
 
 def cleanup(f_name):
     '''
@@ -64,8 +79,7 @@ def cleanup(f_name):
         # Remove CONSTRAINT
         if clean_data[-2].startswith('    CONSTRAINT '):
             del clean_data[-2]
-            clean_data[-2] = ''.join(clean_data[-2].split(','))
-
+            clean_data[-2] = ''.join(clean_data[-2].split(',')) # Delete the comma
         # Remove brackets
         clean_data = [l.replace('[]', '') for l in clean_data]
         return clean_data
@@ -79,18 +93,33 @@ def cleanup(f_name):
     else:
         print("Cannot detect file type, do it on your own...")
 
+
 def writing_file(content, fout_name):
     with open(fout_name, 'w') as file_:
         file_.writelines(['{0}'.format(line) for line in content])
     print("Export to: %s" % os.path.join(os.getcwd(), fout_name))
 
 
+def pg_restore(tb_name, f_type, dump_name='db_dump.dat.decrypted'):
+    if os.path.isfile(dump_name):
+        switch_type = {'data':'-a', 'schema':'-s'}   
+        call = "pg_restore -t {0} {1} -f {0}_{2} {3}".\
+                format(
+                        tb_name,
+                        switch_type[f_type],
+                        f_type,
+                        dump_name
+                        )
+        ret = exec_cmd(call, debug=True)
+        return ret
+    else:
+        return 1
+
 
 def export_db(tb_name, dump_name='db_dump.dat.decrypted'):
-
     if os.path.isfile(dump_name):
         # call_schema = "pg_restore -t {0} -s -f {0}_schema {1}".format(tb_name, dump_name)
-        call_schema = "pg_restore -t tb_sandbox_result -s -f tb_sandbox_result_schema {1}".format(tb_name, dump_name)
+        # call_schema = "pg_restore -t tb_sandbox_result -s -f tb_sandbox_result_schema {1}".format(tb_name, dump_name)
         call_data = "pg_restore -t {0} -a -f {0}_data {1}".format(tb_name, dump_name)
         ret_schm = exec_cmd(call_schema)
         ret_data = exec_cmd(call_data)
@@ -108,7 +137,7 @@ def main():
         print("[Pass] Decrypted dump file already exist...")
     else:
         command = "python decrypt_db_tool.py"
-        ret = exec_cmd(command)
+        ret = exec_cmd(command, debug=True)
         if ret == 0:
             print("[Pass] Finish db_dump decryption...")
         else:
@@ -155,17 +184,35 @@ def main():
     ### EXPORT TABLES INFO ###
     #
     for table in tables:
-        if export_db(table) == 0: # No error
-            # schema_cleaned = cleanup('{0}_schema'.format(table))
-            schema_cleaned = ''.join(cleanup('tb_sandbox_result_schema'))
+        ## Schema (if work) -> then Data
+        table_name = '{0}_schema'.format(table)
+        pg_restore(table, f_type='schema')
+        root_name = root_table(table_name)
+
+        if pg_restore(root_name, f_type='schema') == 0:
+            schema_cleaned = ''.join(cleanup(root_name)) # for latter executescript
             print(schema_cleaned)
-            # exporting = writing_file(schema_cleaned, '{0}_Cschema'.format(table))
-            data_cleaned = cleanup('{0}_data'.format(table))
-            data_cleaned = [tuple(i.split('\t')) for i in data_cleaned]
-            # exporting = writing_file(data_cleaned, '{0}_Cdata'.format(table))
-            print("[Pass] Finish pg_restore on table: {0}".format(table))
+
+            table_name = '{0}_data'.format(table) # table_name for Data
+            if pg_restore(table, f_type='data') == 0:
+                data_cleaned = cleanup(table_name)
+                data_cleaned = [tuple(i.split('\t')) for i in data_cleaned]
+            else:
+                sys.exit("[ERROR] pg_restore on {0} failed, program abort...".format(table_name))
         else:
-            sys.exit("[ERROR] Unable to do pg_restore, program abort...")
+            sys.exit("[ERROR] pg_restore on {0} failed, program abort...".format(table_name))
+
+        # if export_db(table) == 0: # No error
+        #     schema_cleaned = cleanup('{0}_schema'.format(table))
+        #     # schema_cleaned = ''.join(cleanup('tb_sandbox_result_schema'))
+        #     print(schema_cleaned)
+        #     # exporting = writing_file(schema_cleaned, '{0}_Cschema'.format(table))
+        #     data_cleaned = cleanup('{0}_data'.format(table))
+        #     data_cleaned = [tuple(i.split('\t')) for i in data_cleaned]
+        #     # exporting = writing_file(data_cleaned, '{0}_Cdata'.format(table))
+        #     print("[Pass] Finish pg_restore on table: {0}".format(table))
+        # else:
+        #     sys.exit("[ERROR] Unable to do pg_restore, program abort...")
 
     #
     ### INTO SQLite3 ###
