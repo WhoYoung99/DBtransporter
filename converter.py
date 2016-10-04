@@ -146,7 +146,10 @@ def main():
     else:
         with open(CONFIG_TABLE, 'r') as file_:
             tables = file_.read().split()
-        print("[Pass] Load ConfigTable.dat...")
+            if tables == []:
+                sys.exit('ConfigTable.dat is empty, program abort....')
+            else:
+                print("[Pass] Load ConfigTable.dat...")
 
     #
     ### EXPORT TABLES INFO ###
