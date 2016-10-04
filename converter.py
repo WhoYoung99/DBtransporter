@@ -104,7 +104,7 @@ def main():
     ### DECRYPTING ###
     ### default output name: db_dump.dat.decrypted
     #
-    if not os.path.isfile("db_dump.dat.decrypted"):
+    if os.path.isfile("db_dump.dat.decrypted"):
         print("[Pass] Decrypted dump file already exist...")
     else:
         command = "python decrypt_db_tool.py"
