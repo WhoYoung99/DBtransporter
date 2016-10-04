@@ -105,14 +105,14 @@ def main():
     ### default output name: db_dump.dat.decrypted
     #
     if not os.path.isfile("db_dump.dat.decrypted"):
+        print("[Pass] Decrypted dump file already exist...")
+    else:
         command = "python decrypt_db_tool.py"
         ret = exec_cmd(command)
         if ret == 0:
             print("[Pass] Finish db_dump decryption...")
         else:
             sys.exit("[ERROR] Unable to decrypt db_dump, program abort...")
-    else:
-        print("[Pass] Decrypted dump file already exist...")
 
     #
     ### CHECK REQUIRED TOOLS ###
