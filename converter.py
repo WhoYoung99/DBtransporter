@@ -17,7 +17,10 @@ class DBTable:
         return 'Table name: {0.name!r}'.format(self)
 
 def exec_cmd(cmd, debug=False):
-    ret = subprocess.call(cmd, shell=True, stdout=subprocess.PIPE)
+    if debug: 
+        ret = subprocess.call(cmd, shell=True, stdout=subprocess.PIPE)
+    else:
+        ret = subprocess.call(cmd, shell=True)
     return ret
 
 
@@ -120,13 +123,13 @@ def main():
     ret = exec_cmd(command_postgre)
     if ret:
         print("Installing postgresql client package...") 
-        exec_cmd("sudo apt-get install postgresql-client-9.5")
+        exec_cmd("sudo apt-get install postgresql-client-9.5", debug=True)
 
     command_sqlite = "which sqlite3"
     ret = exec_cmd(command_sqlite)
     if ret:
         print("Installing SQLite3 package...")
-        exec_cmd("sudo apt-get install sqlite3")
+        exec_cmd("sudo apt-get install sqlite3", debug=True)
 
     if exec_cmd(command_sqlite) or exec_cmd(command_postgre):
         print("Please install required tools before running the converter again.")
