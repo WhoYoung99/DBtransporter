@@ -18,9 +18,9 @@ class DBTable:
 
 def exec_cmd(cmd, debug=False):
     if debug: 
-        ret = subprocess.call(cmd, shell=True, stdout=subprocess.PIPE)
-    else:
         ret = subprocess.call(cmd, shell=True)
+    else:
+        ret = subprocess.call(cmd, shell=True, stdout=subprocess.PIPE)
     return ret
 
 
