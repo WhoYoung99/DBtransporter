@@ -6,15 +6,35 @@ import sys
 import sqlite3 as lite
 import subprocess
 
-class DBTable:
-    def __init__(self, tb_name):
-        self.name = tb_name
+class DatabaseManager(object):
+    def __init__(self, db=':memory:'):
+        self.conn = lite.connect(db)
+        self.conn.execute('pragma foreign_keys = on')
+        self.conn.commit()
+        self.cur = self.conn.cursor()
 
-    def __repr__(self):
-        return '{0.name!r}'.format(self)
+    def dumping_tb(self, schema, data):
+        # print(''.join(schema))
+        t = ''.join(schema)
+        self.cur.executescript(t)
+        tb_name = schema[0][13:-3]
+        n = len(schema)-2 # Excluding first line 'CREATE TABLE ... (' and last line ');'
+        items = schema[1:-1]
+        # print(items)
+        header = [i.split(' ')[4] for i in items]
+        # print(','.join(header))
+        add_entry = "INSERT INTO {0} ({1}) VALUES ({2})".format(tb_name, ','.join(header), ','.join('?'*n))
+        # print(add_entry)
+        self.cur.executemany(add_entry, data)
+        self.conn.commit()
 
-    def __str__(self):
-        return 'Table name: {0.name!r}'.format(self)
+    def fetching(self, arg):
+        self.cur.execute(arg)
+        return self.cur.fetchall()
+
+    def __del__(self):
+        self.conn.close()
+
 
 def exec_cmd(cmd, debug=False):
     if debug: 
@@ -46,6 +66,10 @@ def ind_finder(words, content, reverse=False):
 def root_table(table_name):
     '''
     Find the root table name, if none, return itself
+    LIMITATION: ONLY search 1 upper inherit table
+    ex. if tb_child ---inherit--> tb_parent ---inherit--> tb_result
+    then root_table(tb_child) only return tb_parent instead of tb_result
+
     '''
     with open(table_name) as file_:
         raw = file_.readlines()
@@ -55,8 +79,8 @@ def root_table(table_name):
         return table_name
     else:
         root = raw[-(ind_root+1)][10:-3]
-        return "{0}_schema".format(root)
-
+        return root
+        # return "{0}_schema".format(root)
 
 
 def cleanup(f_name):
@@ -101,6 +125,10 @@ def writing_file(content, fout_name):
 
 
 def pg_restore(tb_name, f_type, dump_name='db_dump.dat.decrypted'):
+    '''
+    tb_name: no _schema or _data
+    output: tb_name + f_type
+    '''
     if os.path.isfile(dump_name):
         switch_type = {'data':'-a', 'schema':'-s'}   
         call = "pg_restore -t {0} {1} -f {0}_{2} {3}".\
@@ -116,16 +144,16 @@ def pg_restore(tb_name, f_type, dump_name='db_dump.dat.decrypted'):
         return 1
 
 
-def export_db(tb_name, dump_name='db_dump.dat.decrypted'):
-    if os.path.isfile(dump_name):
-        # call_schema = "pg_restore -t {0} -s -f {0}_schema {1}".format(tb_name, dump_name)
-        # call_schema = "pg_restore -t tb_sandbox_result -s -f tb_sandbox_result_schema {1}".format(tb_name, dump_name)
-        call_data = "pg_restore -t {0} -a -f {0}_data {1}".format(tb_name, dump_name)
-        ret_schm = exec_cmd(call_schema)
-        ret_data = exec_cmd(call_data)
-        return ret_data + ret_schm
-    else:
-        return 1
+# def export_db(tb_name, dump_name='db_dump.dat.decrypted'):
+#     if os.path.isfile(dump_name):
+#         # call_schema = "pg_restore -t {0} -s -f {0}_schema {1}".format(tb_name, dump_name)
+#         # call_schema = "pg_restore -t tb_sandbox_result -s -f tb_sandbox_result_schema {1}".format(tb_name, dump_name)
+#         call_data = "pg_restore -t {0} -a -f {0}_data {1}".format(tb_name, dump_name)
+#         ret_schm = exec_cmd(call_schema)
+#         ret_data = exec_cmd(call_data)
+#         return ret_data + ret_schm
+#     else:
+#         return 1
 
 
 def main():
@@ -183,25 +211,38 @@ def main():
     #
     ### EXPORT TABLES INFO ###
     #
+    db = DatabaseManager() # Create DB instance
     for table in tables:
         ## Schema (if work) -> then Data
         table_name = '{0}_schema'.format(table)
         pg_restore(table, f_type='schema')
         root_name = root_table(table_name)
+        print(table_name)
 
         if pg_restore(root_name, f_type='schema') == 0:
-            schema_cleaned = ''.join(cleanup(root_name)) # for latter executescript
-            print(schema_cleaned)
+            schema_cleaned = cleanup('{0}_schema'.format(root_name)) # for latter executescript
+            # print(schema_cleaned)
+            print(''.join(cleanup('{0}_schema'.format(root_name)))) # Print full create table script
 
             table_name = '{0}_data'.format(table) # table_name for Data
             if pg_restore(table, f_type='data') == 0:
                 data_cleaned = cleanup(table_name)
                 data_cleaned = [tuple(i.split('\t')) for i in data_cleaned]
+
             else:
                 sys.exit("[ERROR] pg_restore on {0} failed, program abort...".format(table_name))
         else:
             sys.exit("[ERROR] pg_restore on {0} failed, program abort...".format(table_name))
 
+        test = DatabaseManager()
+        test.dumping_tb(schema_cleaned, data_cleaned)
+        
+        tb_name = schema_cleaned[0][13:-3]
+        #####
+        query = "SELECT * FROM {0} LIMIT 2".format(tb_name)
+        #####
+        print(query)
+        print(test.fetching(query))
         # if export_db(table) == 0: # No error
         #     schema_cleaned = cleanup('{0}_schema'.format(table))
         #     # schema_cleaned = ''.join(cleanup('tb_sandbox_result_schema'))
@@ -215,19 +256,16 @@ def main():
         #     sys.exit("[ERROR] Unable to do pg_restore, program abort...")
 
     #
-    ### INTO SQLite3 ###
+    ### INTO SQLite3 ##
     #
-    con = lite.connect(':memory:')
-    cur = con.cursor()
-    # Create DB
-    cur.executescript(schema_cleaned)
-    # Import Data
-    cur.executemany("INSERT INTO tb_sandbox_result (id, receivedtime, sha1, severity, overallseverity, report, filemd5, parentsha1, origfilename, malwaresourceip, malwaresourcehost, analyzetime, truefiletype, filesize, pcapready, dropsha1list, virusname, va_threat_category_ids, va_virusname_list) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);", data_cleaned)
-    con.commit()
+    # cur = create_db(schema_cleaned)
+    # # Import Data
+    # cur.executemany("INSERT INTO tb_sandbox_result (id, receivedtime, sha1, severity, overallseverity, report, filemd5, parentsha1, origfilename, malwaresourceip, malwaresourcehost, analyzetime, truefiletype, filesize, pcapready, dropsha1list, virusname, va_threat_category_ids, va_virusname_list) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);", data_cleaned)
+    # con.commit()
 
-    cur.execute('SELECT * FROM tb_sandbox_result')
-    print(len(cur.fetchall()))
-    con.close()
+    # cur.execute('SELECT * FROM tb_sandbox_result')
+    # print(len(cur.fetchall()))
+    # con.close()
 
 
 if __name__ == '__main__':
