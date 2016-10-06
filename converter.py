@@ -82,12 +82,60 @@ def root_table(table_name):
         return root
         # return "{0}_schema".format(root)
 
+def leaf_table():
+    '''
+    Find all leaves of table
+    '''
+    table_start_with = ['TABLE DATA public tb_cav_logs_', 'TABLE DATA public tb_tmufe_logs_']
+    command = "pg_restore -l -f TableAll.dat db_dump.dat.decrypted"
+    ret = exec_cmd(command)
+    if ret:
+        print('[ERROR] Cannot create subtable lists...')
+        return ret
+    else:
+        with open('TableAll.dat', 'r') as file_:
+            raw = file_.readlines()
+
+        leaves = [i.split(' ')[-2] for i in raw for target in table_start_with if (target in i)]
+        i = len(leaves)
+        assert i/2 == int(i/2)
+        folder = 'tb_cav_logs'
+        if os.path.isdir('./{0}'.format(folder)):
+            print('[Warning] Folder already exist, start dumping leaves...')
+            pass
+        else:
+            print('[Warning] Create folder, start dumping leaves...')
+            exec_cmd('mkdir {0}'.format(folder))
+        for leaf in leaves[:int(i/2)]:
+            ret = pg_restore(leaf, 'data', folder=folder)
+            if ret:
+                print('[ERROR] Failed to pg_restore {0}'.format(leaf))
+                return ret
+        folder = 'tb_tmufe_logs'
+        if os.path.isdir('./{0}'.format(folder)):
+            print('[Warning] Folder already exist, start dumping leaves...')
+            pass
+        else:
+            print('[Warning] Create folder, start dumping leaves...')
+            exec_cmd('mkdir {0}'.format(folder))
+        for leaf in leaves[int(i/2):]:
+            ret = pg_restore(leaf, 'data', folder=folder)
+            if ret:
+                print('[ERROR] Failed to pg_restore {0}'.format(leaf))
+                return ret
+        ## Logging
+        write_leaf = '\n'.join(leaves)
+        with open('TableList.dat', 'w') as file_:
+            file_.write(write_leaf)
+
+        return 0
+
 
 def cleanup(f_name):
     '''
     f_name: blabla_blablabla_..._schema/data
     '''
-    tb_name = '_'.join(f_name.split('_')[:-1])
+    tb_name = '_'.join(f_name.split('_')[:-1]) # delete _schema & _data
     f_type = f_name.replace('_', '.').split('.')[-1]
     # print("Type: {0}, Table Name: {1}\n".format(f_type, tb_name))
     with open(f_name) as file_:
@@ -124,19 +172,20 @@ def writing_file(content, fout_name):
     print("Export to: %s" % os.path.join(os.getcwd(), fout_name))
 
 
-def pg_restore(tb_name, f_type, dump_name='db_dump.dat.decrypted'):
+def pg_restore(tb_name, f_type, dump_name='db_dump.dat.decrypted', folder=''):
     '''
     tb_name: no _schema or _data
     output: tb_name + f_type
     '''
     if os.path.isfile(dump_name):
         switch_type = {'data':'-a', 'schema':'-s'}   
-        call = "pg_restore -t {0} {1} -f {0}_{2} {3}".\
+        call = "pg_restore -t {0} {1} -f ./{4}/{0}_{2} {3}".\
                 format(
                         tb_name,
                         switch_type[f_type],
                         f_type,
-                        dump_name
+                        dump_name,
+                        folder
                         )
         ret = exec_cmd(call, debug=True)
         return ret
@@ -207,6 +256,12 @@ def main():
                 sys.exit('ConfigTable.dat is empty, program abort....')
             else:
                 print("[Pass] Load ConfigTable.dat...")
+
+    #
+    ###
+    #
+    if leaf_table():
+        sys.exit('[ERROR] Something goes wrong while creating leaf tables...')
 
     #
     ### EXPORT TABLES INFO ###
