@@ -1,12 +1,4 @@
 # Function Tools
-import subprocess
-
-def exec_cmd(cmd, debug=False):
-    if debug:
-        ret = subprocess.call(cmd, shell=True)
-    else:
-        ret = subprocess.call(cmd, shell=True, stdout=subprocess.PIPE)
-    return ret
 
 def ind_finder(words, content, reverse=False):
     '''
