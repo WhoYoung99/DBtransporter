@@ -1,0 +1,32 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.1.9
+-- Dumped by pg_dump version 9.1.9
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET search_path = public, pg_catalog;
+
+--
+-- Data for Name: tb_tmufe_logs_2016_06_21; Type: TABLE DATA; Schema: public; Owner: root
+--
+
+COPY tb_tmufe_logs_2016_06_21 (__log_time, __log_utc_time, threattype, protocolgroup, protocol, vlanid, direction, dstip, dstport, dstmac, dstgroup, dstzone, srcip, srcport, srcmac, severity, srcgroup, srczone, hostname, description, url, detectedby, score, category, dsthost, srchost, interestedip, peerip, domainname, resolved, sender, recipient, subject, useragent, srcos, dstos, totalcount, aggrcount, ccca_flag, ccca_risklevel, ccca_detectionsource, _, __log_id, ece_severity, attack_phase, attack_phase_num, remarks, cc_server, cc_servertype, event_subclass, attack_phase2, messageid, hidden, isipv6, msbn, longdescription, detectionalias, threatname, event_class, cveid, common_threat_family, apt_related, apt_group, apt_campaign, http_referer, clientflag) FROM stdin;
+2016-06-21 10:29:11	2016-06-21 02:29:11	5	6	5	4095	0	82.194.84.120	80	38:2c:4a:65:bc:64		0	192.168.1.228	58135	c8:60:00:cb:14:c7	4	Default	1	82.194.84.120	C&C Server URL in Web Reputation Services database - HTTP (Request)	http://82.194.84.120/images/tuck.php	39	49	91	vlc-220.dns-servicios.com	tw-walttsai3	192.168.1.228	82.194.84.120	http://82.194.84.120	0				Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.3 (KHTML, like Gecko) Arora/0.11.0 Safari/533.3	\N	\N	1	1	1	3	0		4727	8	Command and Control Communication	3	["URL: http://82.194.84.120/images/tuck.php"]	http://82.194.84.120/images/tuck.php	3	Bot	\N		0	0	\N	\N	\N	\N	Callback	\N	\N	0	\N	\N		0
+2016-06-21 10:56:38	2016-06-21 02:56:38	5	6	5	4095	0	5.199.164.111	80	38:2c:4a:65:bc:64		0	192.168.1.228	58174	c8:60:00:cb:14:c7	4	Default	1	crazyloading.cc	C&C Server URL in Web Reputation Services database - HTTP (Request)	http://crazyloading.cc/crypt/load.php?bid=programme&hwid=506CStk761RwCq100y	39	49	91	hst-5-199-164-111.balticservers.eu	tw-walttsai3	192.168.1.228	5.199.164.111	http://crazyloading.cc	0				Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)	\N	\N	1	1	1	3	0		4728	8	Command and Control Communication	3	["URL: http://crazyloading.cc/crypt/load.php?bid=programme&hwid=506CStk761RwCq100y"]	http://crazyloading.cc/crypt/load.php?bid=programme&hwid=506CStk761RwCq100y	3	Bot	\N		0	0	\N	\N	\N	\N	Callback	\N	\N	0	\N	\N		0
+2016-06-21 11:55:54	2016-06-21 03:55:54	5	6	5	4095	0	192.185.16.132	80	38:2c:4a:65:bc:64		0	192.168.1.228	58219	c8:60:00:cb:14:c7	4	Default	1	kentamplin.net	Ransomware URL in Web Reputation Services database - HTTP (Request)	http://kentamplin.net/wordpress/wp-includes/oops.php?id=2886098&cname=PC&arch=1&srv=0&ver=6.1	39	49	95,78	192.185.16.132	tw-walttsai3	192.168.1.228	192.185.16.132	http://kentamplin.net	0				Mozilla/5.0 (Windows NT 10.0; Win64; x64) Edge/13.10586	\N	\N	1	1	1	3	103		4729	8	Command and Control Communication	3	["URL: http://kentamplin.net/wordpress/wp-includes/oops.php?id=2886098&cname=PC&arch=1&srv=0&ver=6.1"]	http://kentamplin.net/wordpress/wp-includes/oops.php?id=2886098&cname=PC&arch=1&srv=0&ver=6.1	3	Ransomware	\N		0	0	\N	\N	\N	\N	Callback	\N	RANSOMWARE	0	\N	\N	http://kentamplin.net/	0
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+

@@ -1,0 +1,30 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.1.9
+-- Dumped by pg_dump version 9.1.9
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET search_path = public, pg_catalog;
+
+--
+-- Data for Name: tb_tmufe_logs_2016_08_03; Type: TABLE DATA; Schema: public; Owner: root
+--
+
+COPY tb_tmufe_logs_2016_08_03 (__log_time, __log_utc_time, threattype, protocolgroup, protocol, vlanid, direction, dstip, dstport, dstmac, dstgroup, dstzone, srcip, srcport, srcmac, severity, srcgroup, srczone, hostname, description, url, detectedby, score, category, dsthost, srchost, interestedip, peerip, domainname, resolved, sender, recipient, subject, useragent, srcos, dstos, totalcount, aggrcount, ccca_flag, ccca_risklevel, ccca_detectionsource, _, __log_id, ece_severity, attack_phase, attack_phase_num, remarks, cc_server, cc_servertype, event_subclass, attack_phase2, messageid, hidden, isipv6, msbn, longdescription, detectionalias, threatname, event_class, cveid, common_threat_family, apt_related, apt_group, apt_campaign, http_referer, clientflag) FROM stdin;
+2016-08-03 18:29:10	2016-08-03 10:29:10	5	6	5	4095	0	200.74.241.151	80	38:2c:4a:65:bc:64		0	192.168.1.228	55541	c8:60:00:cb:14:c7	4	Default	1	videodrome69.net	C&C Server URL in Web Reputation Services database - HTTP (Request)	http://videodrome69.net/knock.php?id=717030	39	49	91	mail.divinederma.com	tw-walttsai3	192.168.1.228	200.74.241.151	http://videodrome69.net	0					\N	\N	1	1	1	3	0		5540	8	Command and Control Communication	3	["URL: http://videodrome69.net/knock.php?id=717030"]	http://videodrome69.net/knock.php?id=717030	3	Bot	\N		0	0	\N	\N	\N	\N	Callback	\N	\N	0	\N	\N		1
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+

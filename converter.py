@@ -1,10 +1,12 @@
 #!/usr/bin/env python3.5
 # -*- coding: utf-8 -*-
-import re
+
 import os
 import sys
 import sqlite3 as lite
 import subprocess
+from dump_tb import *
+from func_tools import *
 
 class DatabaseManager(object):
     def __init__(self, db=':memory:'):
@@ -36,109 +38,109 @@ class DatabaseManager(object):
         self.conn.close()
 
 
-def exec_cmd(cmd, debug=False):
-    if debug: 
-        ret = subprocess.call(cmd, shell=True)
-    else:
-        ret = subprocess.call(cmd, shell=True, stdout=subprocess.PIPE)
-    return ret
+# def exec_cmd(cmd, debug=False):
+#     if debug: 
+#         ret = subprocess.call(cmd, shell=True)
+#     else:
+#         ret = subprocess.call(cmd, shell=True, stdout=subprocess.PIPE)
+#     return ret
 
 
-def ind_finder(words, content, reverse=False):
-    '''
-    Find the index of specific words segment
-    return None if words were not found
+# def ind_finder(words, content, reverse=False):
+#     '''
+#     Find the index of specific words segment
+#     return None if words were not found
 
-    Examples: content = ['a', 'aaaab', 'c']
-    ind_finder('a', content) will return 0
-    ind_finder('aa', content) will return 1
-    ind_finder('x', content) will return None
-    '''
-    counter = 0
-    if reverse: content = reversed(content)
-    for line in content:
-        if words in line:
-            return counter
-        else:
-            counter += 1
-    return None
+#     Examples: content = ['a', 'aaaab', 'c']
+#     ind_finder('a', content) will return 0
+#     ind_finder('aa', content) will return 1
+#     ind_finder('x', content) will return None
+#     '''
+#     counter = 0
+#     if reverse: content = reversed(content)
+#     for line in content:
+#         if words in line:
+#             return counter
+#         else:
+#             counter += 1
+#     return None
 
-def root_table(table_name):
-    '''
-    Find the root table name, if none, return itself
-    LIMITATION: ONLY search 1 upper inherit table
-    ex. if tb_child ---inherit--> tb_parent ---inherit--> tb_result
-    then root_table(tb_child) only return tb_parent instead of tb_result
+# def root_table(table_name):
+#     '''
+#     Find the root table name, if none, return itself
+#     LIMITATION: ONLY search 1 upper inherit table
+#     ex. if tb_child ---inherit--> tb_parent ---inherit--> tb_result
+#     then root_table(tb_child) only return tb_parent instead of tb_result
 
-    '''
-    with open(table_name) as file_:
-        raw = file_.readlines()
+#     '''
+#     with open(table_name) as file_:
+#         raw = file_.readlines()
     
-    ind_root = ind_finder('INHERITS (', raw, reverse=True)
-    if ind_root == None:
-        return table_name
-    else:
-        root = raw[-(ind_root+1)][10:-3]
-        return root
-        # return "{0}_schema".format(root)
+#     ind_root = ind_finder('INHERITS (', raw, reverse=True)
+#     if ind_root == None:
+#         return table_name
+#     else:
+#         root = raw[-(ind_root+1)][10:-3]
+#         return root
+#         # return "{0}_schema".format(root)
 
-def leaf_table():
-    '''
-    Find all leaves of table
-    '''
-    table_start_with = ['TABLE DATA public tb_cav_logs_', 'TABLE DATA public tb_tmufe_logs_']
-    command = "pg_restore -l -f TableAll.dat db_dump.dat.decrypted"
-    ret = exec_cmd(command)
-    if ret:
-        print('[ERROR] Cannot create subtable lists...')
-        return ret
-    else:
-        with open('TableAll.dat', 'r') as file_:
-            raw = file_.readlines()
+# def leaf_table():
+#     '''
+#     Find all leaves of table
+#     '''
+#     table_start_with = ['TABLE DATA public tb_cav_logs_', 'TABLE DATA public tb_tmufe_logs_']
+#     command = "pg_restore -l -f TableAll.dat db_dump.dat.decrypted"
+#     ret = exec_cmd(command)
+#     if ret:
+#         print('[ERROR] Cannot create subtable lists...')
+#         return ret
+#     else:
+#         with open('TableAll.dat', 'r') as file_:
+#             raw = file_.readlines()
 
-        leaves = [i.split(' ')[-2] for i in raw for target in table_start_with if (target in i)]
-        i = len(leaves)
-        assert i/2 == int(i/2)
-        folder = 'tb_cav_logs'
-        if os.path.isdir('./{0}'.format(folder)):
-            print('[Warning] Folder already exist, start dumping leaves...')
-            pass
-        else:
-            print('[Warning] Create folder, start dumping leaves...')
-            exec_cmd('mkdir {0}'.format(folder))
-        for leaf in leaves[:int(i/2)]:
-            ret = pg_restore(leaf, 'data', folder=folder)
-            if ret:
-                print('[ERROR] Failed to pg_restore {0}'.format(leaf))
-                return ret
-        folder = 'tb_tmufe_logs'
-        if os.path.isdir('./{0}'.format(folder)):
-            print('[Warning] Folder already exist, start dumping leaves...')
-            pass
-        else:
-            print('[Warning] Create folder, start dumping leaves...')
-            exec_cmd('mkdir {0}'.format(folder))
-        for leaf in leaves[int(i/2):]:
-            ret = pg_restore(leaf, 'data', folder=folder)
-            if ret:
-                print('[ERROR] Failed to pg_restore {0}'.format(leaf))
-                return ret
-        ## Logging
-        write_leaf = '\n'.join(leaves)
-        with open('TableList.dat', 'w') as file_:
-            file_.write(write_leaf)
+#         leaves = [i.split(' ')[-2] for i in raw for target in table_start_with if (target in i)]
+#         i = len(leaves)
+#         assert i/2 == int(i/2)
+#         folder = 'tb_cav_logs'
+#         if os.path.isdir('./{0}'.format(folder)):
+#             print('[Warning] Folder already exist, skip dumping leaves...')
+#             pass
+#         else:
+#             print('[Warning] Create folder, start dumping leaves...')
+#             exec_cmd('mkdir {0}'.format(folder))
+#             for leaf in leaves[:int(i/2)]:
+#                 ret = pg_restore(leaf, 'data', folder=folder)
+#                 if ret:
+#                     print('[ERROR] Failed to pg_restore {0}'.format(leaf))
+#                     return ret
+#         folder = 'tb_tmufe_logs'
+#         if os.path.isdir('./{0}'.format(folder)):
+#             print('[Warning] Folder already exist, skip dumping leaves...')
+#             pass
+#         else:
+#             print('[Warning] Create folder, start dumping leaves...')
+#             exec_cmd('mkdir {0}'.format(folder))
+#             for leaf in leaves[int(i/2):]:
+#                 ret = pg_restore(leaf, 'data', folder=folder)
+#                 if ret:
+#                     print('[ERROR] Failed to pg_restore {0}'.format(leaf))
+#                     return ret
+#         ## Logging
+#         write_leaf = '\n'.join(leaves)
+#         with open('TableList.dat', 'w') as file_:
+#             file_.write(write_leaf)
 
-        return 0
+#         return 0
 
 
-def cleanup(f_name):
+def cleanup(f_name, folder=''):
     '''
     f_name: blabla_blablabla_..._schema/data
     '''
     tb_name = '_'.join(f_name.split('_')[:-1]) # delete _schema & _data
     f_type = f_name.replace('_', '.').split('.')[-1]
     # print("Type: {0}, Table Name: {1}\n".format(f_type, tb_name))
-    with open(f_name) as file_:
+    with open('./{0}/{1}'.format(folder, f_name)) as file_:
         raw = file_.readlines()
 
     if f_type == 'schema':
@@ -160,10 +162,11 @@ def cleanup(f_name):
         # ind_start = ['COPY {0} ('.format(tb_name) in l for l in raw].index(True)
         ind_start = ind_finder('COPY {0} ('.format(tb_name), raw)+1 # Begin from next line
         ind_end = ind_finder('\.', raw, reverse=True)
-        clean_data = raw[ind_start:-(ind_end+1)]
+        clean_data = raw[ind_start:-(ind_end+1)] # [ 'string', 'string', ... ]
         return clean_data
     else:
         print("Cannot detect file type, do it on your own...")
+        return None
 
 
 def writing_file(content, fout_name):
@@ -280,24 +283,38 @@ def main():
             print(''.join(cleanup('{0}_schema'.format(root_name)))) # Print full create table script
 
             table_name = '{0}_data'.format(table) # table_name for Data
-            if pg_restore(table, f_type='data') == 0:
-                data_cleaned = cleanup(table_name)
-                data_cleaned = [tuple(i.split('\t')) for i in data_cleaned]
+            if table == 'tb_sandbox_parent_result':
+                if pg_restore(table, f_type='data') == 0:
+                    data_cleaned = cleanup(table_name)
+                    data_cleaned = [tuple(i.split('\t')) for i in data_cleaned]
+                    # print(data_cleaned[:2])
 
-            else:
-                sys.exit("[ERROR] pg_restore on {0} failed, program abort...".format(table_name))
+                else:
+                    sys.exit("[ERROR] pg_restore on {0} failed, program abort...".format(table_name))
+            else: # Required subtable content
+                ## Parsing subtables
+                data_cleaned = []
+                for sub in os.listdir(os.path.join(os.getcwd(), table)):
+                    print("table name: %s" % sub)
+                    sub_data = cleanup(sub, folder=table)
+                    sub_data = [tuple(i.split('\t')) for i in sub_data]
+                    data_cleaned += sub_data
+
         else:
             sys.exit("[ERROR] pg_restore on {0} failed, program abort...".format(table_name))
+        
+        # print(data_cleaned)
 
         test = DatabaseManager()
         test.dumping_tb(schema_cleaned, data_cleaned)
-        
+
         tb_name = schema_cleaned[0][13:-3]
         #####
         query = "SELECT * FROM {0} LIMIT 2".format(tb_name)
         #####
         print(query)
         print(test.fetching(query))
+
         # if export_db(table) == 0: # No error
         #     schema_cleaned = cleanup('{0}_schema'.format(table))
         #     # schema_cleaned = ''.join(cleanup('tb_sandbox_result_schema'))
