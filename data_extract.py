@@ -23,38 +23,44 @@ def pg_restore(table, f_type, dump_name, folder=''):
         return 1
 
 
-def root_table(schema_file):
+def root_table(table):
     '''
     Find the root table name, if none, return itself
     LIMITATION: ONLY search 1 upper inherit table
     ex. if tb_child ---inherit--> tb_parent ---inherit--> tb_result
     then root_table(tb_child) only return tb_parent instead of tb_result
     '''
+    schema_file = '{0}_schema'.format(table)
     with open(schema_file) as file_:
         raw = file_.readlines()
     
     ind_root = ind_finder('INHERITS (', raw, reverse=True)
     if ind_root == None:
-        return schema_file
+        return table
     else:
         root = raw[-(ind_root+1)][10:-3]
-        schema_file_root = '{0}_schema'.format(root)
-        return schema_file_root
+        return root
 
 
-def cleanup(f_name, folder=''):
+def cleanup(table, f_type=None, folder=''):
     '''
-    f_name: blabla_blablabla_..._schema/data
     '''
-    tb_name = '_'.join(f_name.split('_')[:-1]) # delete _schema & _data
-    f_type = f_name.replace('_', '.').split('.')[-1]
+
     # print("Type: {0}, Table Name: {1}\n".format(f_type, tb_name))
-    with open('./{0}/{1}'.format(folder, f_name)) as file_:
+    if f_type:
+        table_file = '{0}_{1}'.format(table, f_type)
+    else:
+        f_type = table.split('_')[-1]
+        table_file = table[:]
+        table = table.replace('_{0}'.format(f_type), '')
+        print(table, table_file)
+
+    with open('./{0}/{1}'.format(folder, table_file)) as file_:
         raw = file_.readlines()
 
     if f_type == 'schema':
         # Locate the CREATE TABLE
-        aim = "CREATE TABLE {0} (\n".format(tb_name)
+        aim = "CREATE TABLE {0} (\n".format(table)
         ind_start = raw.index(aim)
         ind_end = raw.index(");\n")
         # Retrieve only CREATE TABLE part
@@ -69,8 +75,7 @@ def cleanup(f_name, folder=''):
         return clean_data
 
     elif f_type == 'data':
-        # ind_start = ['COPY {0} ('.format(tb_name) in l for l in raw].index(True)
-        ind_start = ind_finder('COPY {0} ('.format(tb_name), raw)+1 # Begin from next line
+        ind_start = ind_finder('COPY {0} ('.format(table), raw)+1 # Begin from next line
         ind_end = ind_finder('\.', raw, reverse=True)
         clean_data = raw[ind_start:-(ind_end+1)] # [ 'string', 'string', ... ]
         return clean_data
@@ -83,18 +88,18 @@ def dumpFileExtract(table, db_dump):
     table_name = '{0}_schema'.format(table)
     pg_schema = pg_restore(table, f_type='schema', dump_name=db_dump)
     assert pg_schema == 0
-    root_name = root_table(table_name)
-    if root_name != table_name:
-        pg_root_schema = pg_restore(root_name, f_type='schema', dump_name=db_dump)
+    root = root_table(table)
+    if root != table:
+        pg_root_schema = pg_restore(root, f_type='schema', dump_name=db_dump)
         assert pg_root_schema == 0
 
-    schema_cleaned = cleanup(root_name)
-    print(''.join(cleanup(root_name))) # Print full create table script
+    schema_cleaned = cleanup(root, 'schema')
+    # print(''.join(cleanup(root, 'schema'))) # Print full create table script
 
     table_name = '{0}_data'.format(table)
     if table in ['tb_sandbox_parent_result', 'tb_protocol_request_logs']:
         if pg_restore(table, f_type='data', dump_name=db_dump) == 0:
-            data_cleaned = cleanup(table_name)
+            data_cleaned = cleanup(table, 'data')
             data_cleaned = [tuple(i.split('\t')) for i in data_cleaned]
             # print(data_cleaned[:2])
 
@@ -105,7 +110,7 @@ def dumpFileExtract(table, db_dump):
         ## Parsing subtables
         data_cleaned = []
         for sub in os.listdir(os.path.join(os.getcwd(), table)):
-            # print("table name: %s" % sub)
+            print("table name: %s" % sub)
             sub_data = cleanup(sub, folder=table)
             sub_data = [tuple(i.split('\t')) for i in sub_data]
             data_cleaned += sub_data

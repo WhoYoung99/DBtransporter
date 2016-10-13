@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import re
 import sys
 import sqlite3 as lite
 import subprocess
@@ -27,7 +28,6 @@ class DatabaseManager(object):
         t = ''.join(schema)
         self.cur.executescript(t)
         tb_name = schema[0][13:-3]
-        print(tb_name)
         n = len(schema)-2 # Excluding first line 'CREATE TABLE ... (' and last line ');'
         items = schema[1:-1]
         # print(items)
@@ -97,13 +97,14 @@ def main():
     # print(va_results_schema)
 
     for table in tables:
+        print('[Process] Reading table data: {0}'.format(table))
         schema, data = dumpFileExtract(table, db_dump=FILE_OUT)
+        print('[Process] Create table in SQLite: {0}'.format(table))
         test.dumping_tb(schema, data)
         
         #####
-        tb_name = schema[0][13:-3]
-        # query = "SELECT report FROM {0}".format(tb_name)
-        # query = "SELECT report FROM {0}".format(tb_name)
+        actual_table = schema[0][13:-3]
+        # query = "SELECT report FROM {0}".format(actual_table)
         #####
         # print(query)
         # raw = test.fetching(query)
@@ -114,11 +115,23 @@ def main():
         # test.dumping_tb(va_results_schema, va_results_data)
 
 
-        query = "SELECT * FROM {0} LIMIT 3".format(tb_name)
-        pp.pprint(test.fetching(query))
+        # query = "SELECT * FROM {0} LIMIT 1".format(actual_table)
+        # pp.pprint(test.fetching(query))
 
-        query = "SELECT * FROM {0}".format(tb_name)
-        raw = test.fetching(query)
+
+
+        # query = "SELECT * FROM {0}".format(tb_name)
+        # raw = test.fetching(query)
+
+        # target_col = [i[2].split(',') for i in raw]
+        # DNS = [i[0] for i in target_col]
+        # HTTP = [i[1] for i in target_col]
+        # Email = [i[2] for i in target_col]
+        # sum_DNS = sum([int(re.search(r'\d+', i).group()) for i in DNS])
+        # sum_HTTP = sum([int(re.search(r'\d+', i).group()) for i in HTTP])
+        # sum_Email = sum([int(re.search(r'\d+', i).group()) for i in Email])
+        # pp.pprint([sum_DNS, sum_HTTP, sum_Email])
+        
 
 if __name__ == '__main__':
     main()
