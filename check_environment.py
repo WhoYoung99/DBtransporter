@@ -3,18 +3,7 @@
 # Checking required sys tool including: pg_resotre and sqlite3
 import os
 import sys
-import subprocess
-
-def exec_cmd(cmd, debug=False):
-    '''
-    ret == 0 : success
-    ret == 1 : fail
-    '''
-    if debug:
-        ret = subprocess.call(cmd, shell=True)
-    else:
-        ret = subprocess.call(cmd, shell=True, stdout=subprocess.PIPE)
-    return ret
+from cmd_tool import exec_cmd
 
 
 def decryptingDump(file_in, file_out, decrypt_db_tool='decrypt_db_tool.py'):

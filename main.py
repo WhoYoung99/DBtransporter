@@ -5,11 +5,14 @@ import os
 import sys
 import sqlite3 as lite
 import subprocess
-from check_environment import *
-from func_tools import ind_finder
-
-FILE_IN = 'db_dump.dat'
-FILE_OUT = 'XXXX.dat'
+import pprint as pp
+from copy import deepcopy
+from check_environment import decryptingDump, checkingTools
+from data_dump import ind_finder, leaf_table, readingConfigTable
+from data_extract import pg_restore, root_table, cleanup, dumpFileExtract
+from cmd_tool import exec_cmd
+from parse_xml import parserXML
+import xml.etree.ElementTree as ET
 
 
 class DatabaseManager(object):
@@ -24,6 +27,7 @@ class DatabaseManager(object):
         t = ''.join(schema)
         self.cur.executescript(t)
         tb_name = schema[0][13:-3]
+        print(tb_name)
         n = len(schema)-2 # Excluding first line 'CREATE TABLE ... (' and last line ');'
         items = schema[1:-1]
         # print(items)
@@ -42,152 +46,79 @@ class DatabaseManager(object):
         self.conn.close()
 
 
-def cleanup(f_name, folder=''):
-    '''
-    f_name: blabla_blablabla_..._schema/data
-    '''
-    tb_name = '_'.join(f_name.split('_')[:-1]) # delete _schema & _data
-    f_type = f_name.replace('_', '.').split('.')[-1]
-    # print("Type: {0}, Table Name: {1}\n".format(f_type, tb_name))
-    with open('./{0}/{1}'.format(folder, f_name)) as file_:
-        raw = file_.readlines()
-
-    if f_type == 'schema':
-        # Locate the CREATE TABLE
-        aim = "CREATE TABLE {0} (\n".format(tb_name)
-        ind_start = raw.index(aim)
-        ind_end = raw.index(");\n")
-        # Retrieve only CREATE TABLE part
-        clean_data = raw[ind_start:ind_end+1]
-        # Remove CONSTRAINT
-        if clean_data[-2].startswith('    CONSTRAINT '):
-            del clean_data[-2]
-            clean_data[-2] = ''.join(clean_data[-2].split(',')) # Delete the comma
-        # Remove brackets
-        clean_data = [l.replace('[]', '') for l in clean_data]
-        return clean_data
-
-    elif f_type == 'data':
-        # ind_start = ['COPY {0} ('.format(tb_name) in l for l in raw].index(True)
-        ind_start = ind_finder('COPY {0} ('.format(tb_name), raw)+1 # Begin from next line
-        ind_end = ind_finder('\.', raw, reverse=True)
-        clean_data = raw[ind_start:-(ind_end+1)] # [ 'string', 'string', ... ]
-        return clean_data
-    else:
-        print("Cannot detect file type, do it on your own...")
-        return None
-
-
 def writing_file(content, fout_name):
     with open(fout_name, 'w') as file_:
         file_.writelines(['{0}'.format(line) for line in content])
     print("Export to: %s" % os.path.join(os.getcwd(), fout_name))
 
 
-def pg_restore(tb_name, f_type, dump_name='db_dump.dat.decrypted', folder=''):
-    '''
-    tb_name: no _schema or _data
-    output: tb_name + f_type
-    '''
-    if os.path.isfile(dump_name):
-        switch_type = {'data':'-a', 'schema':'-s'}   
-        call = "pg_restore -t {0} {1} -f ./{4}/{0}_{2} {3}".\
-                format(
-                        tb_name,
-                        switch_type[f_type],
-                        f_type,
-                        dump_name,
-                        folder
-                        )
-        ret = exec_cmd(call, debug=True)
-        return ret
-    else:
-        return 1
+FILE_IN = 'db_dump.dat'
+FILE_OUT = 'XXXX.dat'
+ITEM_LIST = [
+        'ParentSHA1',
+        'FileSHA1',
+        'FileMD5',
+        'TrueFileType',
+        'FileSize',
+        'OrigFileName',
+        'GRIDIsKnownGood',
+        'AnalyzeTime',
+        'VirusName',
+        'AnalyzeStartTime',
+        'ParentChildRelationship'
+        ]
 
 
 def main():
     #
-    ### DECRYPTING ###
-    ### default output name: db_dump.dat.decrypted
+    ###### Part I: chekc_environment.py ######
     #
     do_decrypt = decryptingDump(FILE_IN, FILE_OUT, decrypt_db_tool='decrypt_db_tool.py')
+    assert do_decrypt == 0
 
-    #
-    ### CHECK REQUIRED TOOLS ###
-    ### postgresql-client-9.5
-    ### SQLite3
-    # 
     do_install = checkingTools()
-
-    #   
-    ### TARGET TABLES ###
-    #
-    CONFIG_TABLE = "ConfigTable.dat"
-    if not os.path.isfile(CONFIG_TABLE):
-        sys.exit("[ERROR] Required config missing, program abort...")
-    else:
-        with open(CONFIG_TABLE, 'r') as file_:
-            tables = file_.read().split()
-            if tables == []:
-                sys.exit('ConfigTable.dat is empty, program abort....')
-            else:
-                print("[Pass] Load ConfigTable.dat...")
+    assert do_install == 0
 
     #
-    ###
+    ###### Part II: data_dump.py ######
     #
-    if leaf_table():
-        sys.exit('[ERROR] Something goes wrong while creating leaf tables...')
+    tables = readingConfigTable(file_name='ConfigTable.dat')
+
+    find_subtables = leaf_table(FILE_OUT)
+    assert find_subtables == 0
 
     #
-    ### EXPORT TABLES INFO ###
+    ###### Part III: data_extract.py ######
     #
-    db = DatabaseManager() # Create DB instance
+    test = DatabaseManager()
+
+    with open('table_va_sample_results.txt', 'r') as f:
+        va_results_schema = f.readlines()
+    # print(va_results_schema)
+
     for table in tables:
-        ## Schema (if work) -> then Data
-        table_name = '{0}_schema'.format(table)
-        pg_restore(table, f_type='schema')
-        root_name = root_table(table_name)
-        print(table_name)
-
-        if pg_restore(root_name, f_type='schema') == 0:
-            schema_cleaned = cleanup('{0}_schema'.format(root_name)) # for latter executescript
-            # print(schema_cleaned)
-            print(''.join(cleanup('{0}_schema'.format(root_name)))) # Print full create table script
-
-            table_name = '{0}_data'.format(table) # table_name for Data
-            if table == 'tb_sandbox_parent_result':
-                if pg_restore(table, f_type='data') == 0:
-                    data_cleaned = cleanup(table_name)
-                    data_cleaned = [tuple(i.split('\t')) for i in data_cleaned]
-                    # print(data_cleaned[:2])
-
-                else:
-                    sys.exit("[ERROR] pg_restore on {0} failed, program abort...".format(table_name))
-            else: # Required subtable content
-                ## Parsing subtables
-                data_cleaned = []
-                for sub in os.listdir(os.path.join(os.getcwd(), table)):
-                    print("table name: %s" % sub)
-                    sub_data = cleanup(sub, folder=table)
-                    sub_data = [tuple(i.split('\t')) for i in sub_data]
-                    data_cleaned += sub_data
-
-        else:
-            sys.exit("[ERROR] pg_restore on {0} failed, program abort...".format(table_name))
+        schema, data = dumpFileExtract(table, db_dump=FILE_OUT)
+        test.dumping_tb(schema, data)
         
-        # print(data_cleaned)
-
-        test = DatabaseManager()
-        test.dumping_tb(schema_cleaned, data_cleaned)
-
-        tb_name = schema_cleaned[0][13:-3]
         #####
-        query = "SELECT * FROM {0} LIMIT 2".format(tb_name)
+        tb_name = schema[0][13:-3]
+        # query = "SELECT report FROM {0}".format(tb_name)
+        # query = "SELECT report FROM {0}".format(tb_name)
         #####
-        print(query)
-        print(test.fetching(query))
+        # print(query)
+        # raw = test.fetching(query)
+        # data = [i[0].replace('\\n', '') for i in raw]
+        # parse = [parserXML(i, ITEM_LIST, True) for i in data]
+        # va_results_data = [j for i in parse for j in i]
+        
+        # test.dumping_tb(va_results_schema, va_results_data)
 
+
+        query = "SELECT * FROM {0} LIMIT 3".format(tb_name)
+        pp.pprint(test.fetching(query))
+
+        query = "SELECT * FROM {0}".format(tb_name)
+        raw = test.fetching(query)
 
 if __name__ == '__main__':
     main()

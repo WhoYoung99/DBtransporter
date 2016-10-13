@@ -1,0 +1,2719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REPORTS version="1.1">
+<IMAGE_TYPE>
+	<TYPE id="638AAC3DB25A69BF">XPSP3</TYPE>
+	<TYPE id="A438112341E09F9A">W764bit</TYPE>
+</IMAGE_TYPE>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<FileSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</FileSHA1>
+	<TrueFileType>PKZIP</TrueFileType>
+	<FileSize>6361771</FileSize>
+	<OrigFileName>Setup[FULL]+Incl+Crack.zip</OrigFileName>
+	<OverallROZRating>3</OverallROZRating>
+	<FileMD5>7068498AC28B424D45495367166E0880</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>-1</ROZRating>
+	<GRIDIsKnownGood>-1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:08</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship/>
+	<CensusPrevalence>-1</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>E69338F2CEFB047047E4773CB6E404231429FCED</FileSHA1>
+	<TrueFileType>Win32 DLL</TrueFileType>
+	<FileSize>146944</FileSize>
+	<OrigFileName>Ionic.Zip.Reduced.dll</OrigFileName>
+	<OverallROZRating>0</OverallROZRating>
+	<FileMD5>B41E2D93075878511D0630CBB112153D</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>0</ROZRating>
+	<GRIDIsKnownGood>1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:10</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>32561</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>79BCAAD3714433E01C7F153B05B781F8D7CB318D</FileSHA1>
+	<TrueFileType>Win32 DLL</TrueFileType>
+	<FileSize>421200</FileSize>
+	<OrigFileName>msvcp100.dll</OrigFileName>
+	<OverallROZRating>0</OverallROZRating>
+	<FileMD5>BC83108B18756547013ED443B8CDB31B</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>0</ROZRating>
+	<GRIDIsKnownGood>1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:10</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>202935787</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>BD384B27452B3BA4B085A96434B67489A821A85E</FileSHA1>
+	<TrueFileType>Win32 DLL</TrueFileType>
+	<FileSize>2468864</FileSize>
+	<OrigFileName>Noesis.Javascript.dll</OrigFileName>
+	<OverallROZRating>0</OverallROZRating>
+	<FileMD5>363F567FE571B4BD278E5D604EF7EE2C</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>0</ROZRating>
+	<GRIDIsKnownGood>1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:10</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>881</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>F5FE571B8D7356F05B3A19A8A7CC1E885D9DC371</FileSHA1>
+	<TrueFileType>Win32 DLL</TrueFileType>
+	<FileSize>393216</FileSize>
+	<OrigFileName>ObjectListView.dll</OrigFileName>
+	<OverallROZRating>0</OverallROZRating>
+	<FileMD5>BC1B04717E77E0398902A158CB5CE77D</FileMD5>
+	<MalwareSourceIP>192.168.4.129</MalwareSourceIP>
+	<MalwareSourceHost>192.168.4.129</MalwareSourceHost>
+	<ROZRating>0</ROZRating>
+	<GRIDIsKnownGood>-1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:07:12</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>1</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>11</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:13</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+	<NETWORK_ACCESS_RECORD>
+		<IP>104.115.227.41</IP>
+		<Host>go.microsoft.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>117.18.237.191</IP>
+		<Host>cdp1.public-trust.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>204.79.197.203</IP>
+		<Host>www.msn.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>2</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>68.232.45.201</IP>
+		<Host>mscrl.microsoft.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>131.253.34.240</IP>
+		<Host>ieonlinews.microsoft.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>184.84.60.29</IP>
+		<Host>www.microsoft.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>204.79.197.203</IP>
+		<Host>www.msn.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>3</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>117.18.237.191</IP>
+		<Host>cdp1.public-trust.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>68.232.45.201</IP>
+		<Host>mscrl.microsoft.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>104.115.227.41</IP>
+		<Host>go.microsoft.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>184.84.60.29</IP>
+		<Host>www.microsoft.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>2</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>131.253.34.240</IP>
+		<Host>ieonlinews.microsoft.com</Host>
+		<Port>443</Port>
+		<Protocol>https</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421203</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 0, Edwin-Desktop3, 12e66c ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421203</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 3, Edwin-Desktop3, 12e66c ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421234</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153ff0, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421234</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153ff0, 0, uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421234</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153ff0, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421234</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153ff0, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421234</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153ff0, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 0, 0, %windir%\system32\mscoree.dll, 79000000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 154140, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 154140, 0, shlwapi.dll, 77f60000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153ff0, 0, %WorkingDir%\objectlistview.dll, 1ce0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153ff0, 0, version.dll, 77c00000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 154140, 0, user32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153ff0, 0, %windir%\system32\msctfime.ime, 755c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153ff0, 0, %windir%\system32\msctfime.ime, 755c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421359</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 0, 480cf0, Explorer, cf0000, 80000000, 0, 80000000, 0, 0, 0, 400000, 0 ) Return: 2029e</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000421359</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\tools\FakeExplorer.exe -d -x %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2540</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, 12e79c, MSCTFIME UI, 88000000, 0, 0, 0, 0, 102a4, 0, 755c0000, 0 ) Return: 102aa</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514234</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 0, Edwin-Desktop3, 12e66c ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514234</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 3, Edwin-Desktop3, 12e66c ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514250</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514250</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514265</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514265</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514265</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 0, 0, %windir%\system32\mscoree.dll, 79000000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 154138, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 154138, 0, shlwapi.dll, 77f60000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %WorkingDir%\objectlistview.dll, 1ce0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, version.dll, 77c00000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 154138, 0, user32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\msctfime.ime, 755c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\msctfime.ime, 755c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514343</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 0, 480cf0, Explorer, cf0000, 80000000, 0, 80000000, 0, 0, 0, 400000, 0 ) Return: 200c2</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000514359</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, 12e79c, MSCTFIME UI, 88000000, 0, 0, 0, 0, 200c4, 0, 755c0000, 0 ) Return: 200c6</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000606015</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, api-ms-win-appmodel-runtime-l1-1-1, 0 ) Return: c0000135</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000606015</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\iexplore.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2680</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, ext-ms-win-kernel32-package-current-l1-1-0, 0 ) Return: c0000135</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607296</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 0, Edwin-Desktop3, 12e66c ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607296</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 3, Edwin-Desktop3, 12e66c ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607328</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607375</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 0, 0, %windir%\system32\mscoree.dll, 79000000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607375</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 154138, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607375</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 154138, 0, shlwapi.dll, 77f60000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607390</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %WorkingDir%\objectlistview.dll, 1ce0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607390</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, version.dll, 77c00000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607390</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 154138, 0, user32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607390</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\msctfime.ime, 755c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607390</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, %windir%\system32\msctfime.ime, 755c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607406</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 0, 480cf0, Explorer, cf0000, 80000000, 0, 80000000, 0, 0, 0, 400000, 0 ) Return: 300c2</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000607406</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, 12e79c, MSCTFIME UI, 88000000, 0, 0, 0, 0, 300c4, 0, 755c0000, 0 ) Return: 300c6</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000659015</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, api-ms-win-appmodel-runtime-l1-1-1, 0 ) Return: c0000135</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000659015</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%windir%\system32\explorer.exe -s -d %WorkingDir%\ObjectListView.dll</ProcessName>
+		<PID>2824</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 153fe8, 0, ext-ms-win-kernel32-package-current-l1-1-0, 0 ) Return: c0000135</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>0F12844FB1DDA278B0A543CC681C56CB2718D6DC</FileSHA1>
+	<TrueFileType>Win32 DLL</TrueFileType>
+	<FileSize>2490368</FileSize>
+	<OrigFileName>SkinSoft.OSSkin.dll</OrigFileName>
+	<OverallROZRating>0</OverallROZRating>
+	<FileMD5>6C07231641F18F3984A77ED87050034C</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>0</ROZRating>
+	<GRIDIsKnownGood>1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:11</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>43</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>3A919DDF08FB5EFBD63459680AEC7E592378117C</FileSHA1>
+	<TrueFileType>Win32 DLL</TrueFileType>
+	<FileSize>122880</FileSize>
+	<OrigFileName>XPPanel.dll</OrigFileName>
+	<OverallROZRating>0</OverallROZRating>
+	<FileMD5>C6AAC25B1917C05AD41F1145AEB87734</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>0</ROZRating>
+	<GRIDIsKnownGood>1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:11</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>7177</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>463E53D8A1EBC3F9F165F1137454072DF1C644C3</FileSHA1>
+	<TrueFileType>ASCII text</TrueFileType>
+	<FileSize>452</FileSize>
+	<OrigFileName>license.lic</OrigFileName>
+	<OverallROZRating>-1</OverallROZRating>
+	<FileMD5>B2DDC9AF3931CCF8D125DCF2C0C856D2</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>-1</ROZRating>
+	<GRIDIsKnownGood>-1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:08</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>-1</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>5D1BD5CA07DD2BD0C78481C59FF34A593905F5AE</FileSHA1>
+	<TrueFileType>Win32 DLL</TrueFileType>
+	<FileSize>90112</FileSize>
+	<OrigFileName>Google.GData.Extensions.dll</OrigFileName>
+	<OverallROZRating>0</OverallROZRating>
+	<FileMD5>B9CBED74F9E117C0731047A3C69C971A</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>0</ROZRating>
+	<GRIDIsKnownGood>1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:11</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>5117</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>1D674317DB1EFFA69DFE1DE2E6D368711C79CEF7</FileSHA1>
+	<TrueFileType>Win32 DLL</TrueFileType>
+	<FileSize>200704</FileSize>
+	<OrigFileName>Google.GData.Client.dll</OrigFileName>
+	<OverallROZRating>0</OverallROZRating>
+	<FileMD5>81D1B862F4D4C0A3D462DE03B11C7C03</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>0</ROZRating>
+	<GRIDIsKnownGood>1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:12</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>5350</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>2525C94F73908AF1408F1FD5E87790965C149648</FileSHA1>
+	<TrueFileType>ASCII text</TrueFileType>
+	<FileSize>83</FileSize>
+	<OrigFileName>SERIAL.txt</OrigFileName>
+	<OverallROZRating>-1</OverallROZRating>
+	<FileMD5>88FEF3E165BA67A18F7C07D0DC980857</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>-1</ROZRating>
+	<GRIDIsKnownGood>-1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:08</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>-1</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>C8CCB04EEDAC821A13FAE314A2435192860C72B8</FileSHA1>
+	<TrueFileType>Win32 DLL</TrueFileType>
+	<FileSize>499712</FileSize>
+	<OrigFileName>msvcp71.dll</OrigFileName>
+	<OverallROZRating>0</OverallROZRating>
+	<FileMD5>561FA2ABB31DFA8FAB762145F81667C2</FileMD5>
+	<MalwareSourceIP/>
+	<MalwareSourceHost/>
+	<ROZRating>0</ROZRating>
+	<GRIDIsKnownGood>1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:04:12</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName/>
+	<PcapReady>0</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>114576755</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:07</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+</FILE_ANALYZE_REPORT>
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<ParentSHA1>94FD67BED746BC2E530BA1048557E9C27C2A6990</ParentSHA1>
+	<FileSHA1>43CEC6096C06291A3194218E0B388133B5EDAA29</FileSHA1>
+	<TrueFileType>UPX EXE</TrueFileType>
+	<FileSize>2987208</FileSize>
+	<OrigFileName>setup.exe</OrigFileName>
+	<OverallROZRating>3</OverallROZRating>
+	<FileMD5>1CE304101AED706F6753ADB2EB416FA1</FileMD5>
+	<MalwareSourceIP>192.168.4.129</MalwareSourceIP>
+	<MalwareSourceHost>192.168.4.129</MalwareSourceHost>
+	<ROZRating>3</ROZRating>
+	<GRIDIsKnownGood>-1</GRIDIsKnownGood>
+	<AnalyzeTime>2016-09-22 07:05:03</AnalyzeTime>
+	<VirusDetected>0</VirusDetected>
+	<EngineVersion>9.862.1074</EngineVersion>
+	<PatternVersion>12.789.92</PatternVersion>
+	<VirusName>VAN_MALWARE.UMXX</VirusName>
+	<PcapReady>1</PcapReady>
+	<ParentChildRelationship>Extracted from archive</ParentChildRelationship>
+	<CensusPrevalence>3</CensusPrevalence>
+	<SandcastleClientVersion>6.0.1208</SandcastleClientVersion>
+	<AnalyzeStartTime>2016-09-22 07:04:13</AnalyzeStartTime>
+	<SampleFilePassword/>
+	<DuplicateSHA1>0</DuplicateSHA1>
+	<AnalysisViolation categoryID="9">
+		<violatedPolicyName>Suspicious network or messaging activity</violatedPolicyName>
+		<AnalysisViolatedEvent eventID="908">
+			<Event>Attempts to connect to malicious host</Event>
+			<Details>Host: piroga.space
+Threat Name: LOW-REPUTATION-URL_BLOCKED-LIST.SCORE.WRS</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="909">
+			<Event>Attempts to connect to malicious URL</Event>
+			<Details>URL: http://piroga.space/pages/inmon/images/icon1-green.png
+Threat Name: LOW-REPUTATION-URL_BLOCKED-LIST.SCORE.WRS</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="909">
+			<Event>Attempts to connect to malicious URL</Event>
+			<Details>URL: http://piroga.space/pages/inmon/images/icon3-green.png
+Threat Name: LOW-REPUTATION-URL_BLOCKED-LIST.SCORE.WRS</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="909">
+			<Event>Attempts to connect to malicious URL</Event>
+			<Details>URL: http://piroga.space/pages/inmon/css/style.css
+Threat Name: LOW-REPUTATION-URL_BLOCKED-LIST.SCORE.WRS</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="909">
+			<Event>Attempts to connect to malicious URL</Event>
+			<Details>URL: http://piroga.space/pages/inmon/images/icon2-green.png
+Threat Name: LOW-REPUTATION-URL_BLOCKED-LIST.SCORE.WRS</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="909">
+			<Event>Attempts to connect to malicious URL</Event>
+			<Details>URL: http://piroga.space/pages/inmon/im-typ.html
+Threat Name: LOW-REPUTATION-URL_MALWARE.WRS</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="909">
+			<Event>Attempts to connect to malicious URL</Event>
+			<Details>URL: http://piroga.space/favicon.ico
+Threat Name: LOW-REPUTATION-URL_BLOCKED-LIST.SCORE.WRS</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="905">
+			<Event>Queries DNS server</Event>
+			<Details>piroga.space</Details>
+		</AnalysisViolatedEvent>
+	</AnalysisViolation>
+	<AnalysisViolation categoryID="3">
+		<violatedPolicyName>Deception, social engineering</violatedPolicyName>
+		<AnalysisViolatedEvent eventID="301">
+			<Event>Uses fake or uncommon signature</Event>
+			<Details>The file comes from an unknown company: YUNIKSERVIS, OOO.</Details>
+		</AnalysisViolatedEvent>
+	</AnalysisViolation>
+	<AnalysisViolation categoryID="6">
+		<violatedPolicyName>Malformed, defective, or with known malware traits</violatedPolicyName>
+		<AnalysisViolatedEvent eventID="607">
+			<Event>Rare executable file</Event>
+			<Details>Global Detections: 3</Details>
+		</AnalysisViolatedEvent>
+	</AnalysisViolation>
+	<AnalysisViolation categoryID="1">
+		<violatedPolicyName>Anti-security, self-preservation</violatedPolicyName>
+		<AnalysisViolatedEvent eventID="135">
+			<Event>Attempts to detect sandbox instructions</Event>
+			<Details>Process ID: 2688
+Instruction: IN eax='VMXh', dx='VX'</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="135">
+			<Event>Attempts to detect sandbox instructions</Event>
+			<Details>Process ID: 2688
+Instruction: __emit 0Fh, __emit 3Fh, __emit 07h, __emit 0Bh</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="108">
+			<Event>Attempts to detect sandbox characteristics</Event>
+			<Details>Info: Sample attempted to detect sandbox using the following registry item: [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Disk\Enum\0]</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="115">
+			<Event>Attempts to detect debugger programs</Event>
+			<Details>Process ID: 2688
+Info: Sample attempted to detect debugger by the tech DEBUG_EXCEPTION</Details>
+		</AnalysisViolatedEvent>
+		<AnalysisViolatedEvent eventID="123">
+			<Event>Attempts to detect sandbox strings</Event>
+			<Details>Sample attempted to detect Sandbox using the following string: text/html-sandboxed</Details>
+		</AnalysisViolatedEvent>
+	</AnalysisViolation>
+	<NETWORK_ACCESS_RECORD>
+		<IP>104.239.247.99</IP>
+		<Host>piroga.space</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>2</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>40.74.131.199</IP>
+		<Host>urs.microsoft.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>146.88.128.61</IP>
+		<Host>cdn.castplatform.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>2</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>23.99.122.99</IP>
+		<Host>d.castplatform.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>2</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>117.18.237.191</IP>
+		<Host>cdp1.public-trust.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>93.184.216.34</IP>
+		<Host>example.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>2</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>68.232.45.201</IP>
+		<Host>mscrl.microsoft.com</Host>
+		<Port>53</Port>
+		<Protocol>domain</Protocol>
+		<Count>2</Count>
+		<IsDynamicIP>1</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>23.99.122.99</IP>
+		<Host>d.castplatform.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>3</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>93.184.216.34</IP>
+		<Host>example.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>3</Count>
+		<IsDynamicIP>-2</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>117.18.237.191</IP>
+		<Host>cdp1.public-trust.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>1</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>104.239.247.99</IP>
+		<Host>piroga.space</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>13</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>146.88.128.61</IP>
+		<Host>cdn.castplatform.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>3</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>68.232.45.201</IP>
+		<Host>mscrl.microsoft.com</Host>
+		<Port>80</Port>
+		<Protocol>http</Protocol>
+		<Count>3</Count>
+		<IsDynamicIP>1</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<NETWORK_ACCESS_RECORD>
+		<IP>40.74.131.199</IP>
+		<Host>urs.microsoft.com</Host>
+		<Port>443</Port>
+		<Protocol>https</Protocol>
+		<Count>3</Count>
+		<IsDynamicIP>0</IsDynamicIP>
+	</NETWORK_ACCESS_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427406</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 0, Edwin-Desktop3, 13e66c ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427406</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 3, Edwin-Desktop3, 13e66c ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427484</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32.dll, 7c800000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427484</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32.dll, 7c800000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427500</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32.dll, 7c800000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427500</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32.dll, 7c800000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427500</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32.dll, 7c800000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427515</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32.dll, 7c800000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427515</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32.dll, 7c800000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427515</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427515</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427515</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427515</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427515</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427515</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, comctl32.dll, 773d0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427515</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, comdlg32.dll, 763b0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, gdi32.dll, 77f10000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, mpr.dll, 71b20000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, netapi32.dll, 5b860000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ole32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ole32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, oleaut32.dll, 77120000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, oleaut32.dll, 77120000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, oleaut32.dll, 77120000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, oleaut32.dll, 77120000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, shell32.dll, 7c9c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427531</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, shell32.dll, 7c9c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427546</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 7e410000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427546</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 7e410000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427546</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, version.dll, 77c00000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427546</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, winspool.drv, 73000000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427546</Timestamp>
+		<Action>mutex call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateMutexA Args: ( 0, 0, MutexNPA_UnitVersioning_2688 ) Return: 168</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427562</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 71f80000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427578</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 1b6d78, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427578</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427578</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 1b6d78, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427578</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 1b6d78, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427578</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 1b6d78, 0, %windir%\system32\uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427640</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164e60, 0, %windir%\system32\ole32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427640</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, %windir%\system32\msctfime.ime, 755c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427640</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, %windir%\system32\msctfime.ime, 755c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427640</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 0, 4dfb38, setup, 84ca0000, 200, 180, 0, 0, 0, 0, 400000, 0 ) Return: 102a8</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427687</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, oleaut32.dll, 5edd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427687</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, oleaut32.dll, 77120000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427687</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32.dll, 7c800000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427687</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427687</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 7e410000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427718</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, colorui.dll, 0 ) Return: c0000135</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427718</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, shell32.dll, 7c9c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427734</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, comctl32.dll, 773d0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427750</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, comdlg32.dll, 763b0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427828</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164e60, 0, comctl32.dll, 773d0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427828</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 6e680000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427906</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, inetres.dll, 23b0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427906</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 76380000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427906</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 7e410000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427906</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, comctl32.dll, 773d0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427906</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427906</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, comctl32.dll, 773d0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427906</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, comctl32.dll, 773d0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427906</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32., 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427921</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 7e410000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427921</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, shell32.dll, 7c9c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427921</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, gdi32.dll, 77f10000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427937</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 7e410000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427937</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427937</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000427937</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 76d60000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428046</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, c038, OleMainThreadWndName, 88000000, 80000000, 80000000, 80000000, 80000000, fffffffd, 0, 774e0000, 0 ) Return: 102ac</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428078</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32.dl, 76fd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428093</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 76fd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428109</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, rpcrt4.dll, 77e70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428140</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, xpsp2res.dll, 23e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428140</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameW Args: ( Edwin-Desktop3, 77efb070 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428156</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameW Args: ( Edwin-Desktop3, 13fb94 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428156</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ole32, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428156</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ole32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428156</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 80, 430a80, , 80000000, 0, 0, 0, 0, 0, 0, 400000, 0 ) Return: 102ae</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428218</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, comctl32.dll, 773d0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428218</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, %windir%\system32\ieframe.dll, 28b0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428234</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 1b6d78, 0, %windir%\system32\ieframe.dll, 28b0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428250</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 100, 28bec4c, , 86010000, 0, 0, 0, 0, 0, 0, 28b0000, 163664 ) Return: 102b0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428265</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 10000, 13f7ac, , 6c00000, d9, 2e1, 140, f0, 102a8, 0, 400000, 0 ) Return: 5028a</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428265</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 10000, 13f8d0, , 46000000, 0, 0, 114, 30, 5028a, 0, 400000, 0 ) Return: 102b2</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428312</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 732e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ole32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428343</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, c137, DDE Server Window, 80000000, 0, 0, 0, 0, 0, 0, 774e0000, 0 ) Return: 102b6</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428343</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, 774e1b30, , 80000000, 80000000, 80000000, 80000000, 80000000, fffffffd, 0, 774e0000, 0 ) Return: 102b8</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428343</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 200, 13f8b0, , 44010044, 178, 10, b9, 59, 102b2, 0, 400000, 0 ) Return: 102b4</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428343</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 100, 28bec4c, , 86010000, 0, 0, 0, 0, 0, 0, 28b0000, 163854 ) Return: 102ba</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428343</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 80, 430a80, , 80000000, 0, 0, 0, 0, 0, 0, 400000, 0 ) Return: 102bc</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 71ab0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428359</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, fwpuclnt.dll, 0 ) Return: c0000135</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428406</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, kernel32., 3530000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428406</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 76d60000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428421</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 80, 430a80, , 80000000, 0, 0, 0, 0, 0, 0, 400000, 0 ) Return: 102be</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428421</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 80, 430a80, , 80000000, 0, 0, 0, 0, 0, 0, 400000, 0 ) Return: 102c0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428421</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 80, 430a80, , 80000000, 0, 0, 0, 0, 0, 0, 400000, 0 ) Return: 102c2</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428421</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 80, 430a80, , 80000000, 0, 0, 0, 0, 0, 0, 400000, 0 ) Return: 102c4</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428453</Timestamp>
+		<Action>filesystem call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: SetFileTime Args: ( 284, NULL, 2016-08-22/07:04:27, NULL ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428593</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: FindWindowW Args: ( STATIC, MainForm763386698 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428593</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000428593</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, 1eb404, MainForm763386698, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) Return: 102c6</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429312</Timestamp>
+		<Action>read_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Linkage\Bind Value: \Device\{87367B21-7AFB-4979-845B-8136379DAFC9}\0\Device\NdisWanIp\0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429578</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164e60, 0, comctl32.dll, 773d0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429593</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg\LogSessionName Value: stdout</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429593</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg\Active Value: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429593</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg\ControlFlags Value: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429593</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg\traceIdentifier\Guid Value: 5f31090b-d990-4e91-b16d-46121d0255aa</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429593</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappcfg\traceIdentifier\BitNames Value:  Error Unusual Info Debug</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429593</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy\LogSessionName Value: stdout</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429593</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy\Active Value: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429593</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy\ControlFlags Value: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429609</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy\traceIdentifier\Guid Value: 5f31090b-d990-4e91-b16d-46121d0255aa</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429609</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\eappprxy\traceIdentifier\BitNames Value:  Error Unusual Info Debug</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429625</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164e60, 0, rasapi32.dll, 76ee0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429625</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil\LogSessionName Value: stdout</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429625</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil\Active Value: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429640</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil\ControlFlags Value: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429640</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil\traceIdentifier\Guid Value: 8aefce96-4618-42ff-a057-3536aa78233e</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429640</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\QUtil\traceIdentifier\BitNames Value:  Error Unusual Info Debug</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429703</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\ESENT\EventMessageFile Value: %windir%\system32\ESENT.dll</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429703</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\ESENT\CategoryMessageFile Value: %windir%\system32\ESENT.dll</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429703</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\ESENT\CategoryCount Value: 10</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429703</Timestamp>
+		<Action>write_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\ESENT\TypesSupported Value: 7</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429765</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 77d00000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000429765</Timestamp>
+		<Action>read_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Linkage\Bind Value: \Device\{87367B21-7AFB-4979-845B-8136379DAFC9}\0\Device\NdisWanIp\0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430031</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164e60, 0, ntdll.dll, 73d90000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430031</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, conout$, 73d90000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430031</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, %windir%\system32\netapi32.dll, 5b860000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430062</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DeviceIoControl Args: ( 300, 7405c, 0, 0, 13f584, 8, ,  ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430078</Timestamp>
+		<Action>read_key</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Key: HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Disk\Enum\0 Value: IDE\DiskVBOX_HARDDISK___________________________1.0_____\42563134333831666362312d6332313839392066</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430093</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 25ea80, 0, %windir%\system32\wbem\wbemdisp.dll, 5a730000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430093</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, %windir%\system32\advapi32.dll, 77dd0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430156</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 25ea80, 0, %windir%\system32\wbem\wbemprox.dll, 74ef0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430171</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 25ea80, 0, %windir%\system32\wbem\wmiutils.dll, 75020000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430171</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 3, , 13ebf0 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430171</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 3, Edwin-Desktop3, 13ebf0 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430171</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameW Args: ( Edwin-Desktop3, 13e9ac ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430187</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ws2help.dll, 71a50000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430187</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 76f20000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430203</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ws2_32.dll, 76fb0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430203</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ws2help.dll, 71a50000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430203</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 76fc0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430218</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameW Args: ( Edwin-Desktop3, 13eac4 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430218</Timestamp>
+		<Action>network call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: gethostbyname Args: ( localhost ) Return: 127.0.0.1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430234</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 25ea80, 0, %windir%\system32\wbem\wbemsvc.dll, 74ed0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430250</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameW Args: ( Edwin-Desktop3, 13f3c4 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430250</Timestamp>
+		<Action>wmi call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: IWbemLevel1Login::NTLMLogin Args: ( \\localhost\root\SecurityCenter2, , 0, 0, 13f5b0 ) Return: 8004100e</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430250</Timestamp>
+		<Action>write_file</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>Path: %windir%\system32\wbem\Logs\wbemprox.log Type: VSDT_ASCII</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430265</Timestamp>
+		<Action>wmi call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: IWbemLocator::ConnectServer Args: ( \\localhost\root\SecurityCenter2, NULL, NULL, NULL, 0, NULL, 0, 13f5b0 ) Return: 8004100e</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430265</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, oleaut32.dll, 77120000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430343</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, sxs.dll, 7e720000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430375</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 3, , 13e3fc ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430375</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameExW Args: ( 3, Edwin-Desktop3, 13e3fc ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430375</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameW Args: ( Edwin-Desktop3, 13e1b8 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430375</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameW Args: ( Edwin-Desktop3, 13e2d0 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430375</Timestamp>
+		<Action>network call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: gethostbyname Args: ( localhost ) Return: 127.0.0.1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430375</Timestamp>
+		<Action>systeminfo call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: GetComputerNameW Args: ( Edwin-Desktop3, 13ebd0 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430406</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 25ea80, 0, %windir%\system32\wbem\fastprox.dll, 75690000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430406</Timestamp>
+		<Action>wmi call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: IWbemLevel1Login::NTLMLogin Args: ( \\localhost\root\CIMV2, , 0, 0, 13edbc ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430406</Timestamp>
+		<Action>wmi call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: IWbemLocator::ConnectServer Args: ( \\localhost\root\CIMV2, NULL, NULL, NULL, 0, NULL, 0, 13edbc ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430656</Timestamp>
+		<Action>wmi call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: IWbemServices::ExecQuery Args: ( WQL, SELECT * FROM Win32_VideoController, 120, 0, 13ed48 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430718</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ole32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430734</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, netapi32, 5b860000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430796</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ntdll.dll, 77b40000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430796</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, ole32.dll, 774e0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430796</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, shlwapi.dl, 1a400000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430812</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, version.dll, 77c00000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430812</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, urlmon.dll, 1a400000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430812</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, urlmon.dll, 1a400000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000430968</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164e60, 0, user32.dll, 77a80000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431078</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, %windir%, 68000000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431093</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dll, 7e410000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431093</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, msimg32.dll, 76380000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431093</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, uxtheme.dll, 5ad70000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431109</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 4695dd0, 0, c:\progra~1\micros~2\office12\gra8e1~1.dll, 661c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431109</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 1b6d78, 0, %windir%\system32\urlmon.dll, 1a400000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431109</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, shell32.dll, 7c9c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431125</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, 77f796dc, , 0, 0, 0, 0, 0, 0, 0, 77f60000, 0 ) Return: 202ca</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431625</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 202ca ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431640</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, shell32.dll, 7c9c0000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431640</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 0, 13fce0, , 44000000, ffffffb0, 1f, 28, 11, 5028a, 0, 400000, 0 ) Return: 302ca</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431640</Timestamp>
+		<Action>system call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: LdrLoadDll Args: ( 164c88, 0, user32.dl, 76390000 ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431671</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 200, 13fcb4, , 44010044, 15, 70, f4, 3a, 102b2, 0, 400000, 0 ) Return: 102da</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431687</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 0, 13fcc4, , 44000000, 7, 18, 103, 12, 102b2, 0, 400000, 0 ) Return: 102dc</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431687</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExA Args: ( 0, 13fcc4, , 44010000, bd, 40, 1a, 19, 102b2, 0, 400000, 0 ) Return: 102de</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000431687</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, 13ec34, MSCTFIME UI, 88000000, 0, 0, 0, 0, 102aa, 0, 755c0000, 0 ) Return: 102e0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432078</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: CreateWindowExW Args: ( 0, 77f796dc, , 0, 0, 0, 0, 0, 0, 0, 77f60000, 0 ) Return: 10302</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432171</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 10302 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432171</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102c6 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432187</Timestamp>
+		<Action>filesystem call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DeleteFileW Args: (  ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432250</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102b8 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432250</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102b6 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432250</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 5028a ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432250</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102bc ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432265</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102ae ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432265</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102c4 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432265</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102c2 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432265</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102c0 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432265</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102be ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432265</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102ac ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432296</Timestamp>
+		<Action>window call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: DestroyWindow Args: ( 102a8 ) Return: 1</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+	<SYSTEM_BEHAVIOR_RECORD>
+		<Timestamp>20160922000432531</Timestamp>
+		<Action>filesystem call_api</Action>
+		<ProcessName>%WorkingDir%\setup.exe</ProcessName>
+		<PID>2688</PID>
+		<ParentPID/>
+		<DetailInfo>API Name: NtReadFile Args: ( 15c, , , , , , 200, ,  ) Return: 0</DetailInfo>
+	</SYSTEM_BEHAVIOR_RECORD>
+</FILE_ANALYZE_REPORT>
+
+
+
+
+
+
+
+
+
+
+
+
+<FILE_ANALYZE_REPORT image_type="638AAC3DB25A69BF">
+	<FileSHA1>6EDD5D5646352D0B6703D0C2F00A25778951DAF8</FileSHA1>
+	<FileMD5>97D436151EDC8102D22DF7D450535020</FileMD5>
+	<ParentSHA1>43CEC6096C06291A3194218E0B388133B5EDAA29</ParentSHA1>
+	<ROZRating>-1</ROZRating>
+	<OverallROZRating>-1</OverallROZRating>
+	<ParentChildRelationship>Dropped or downloaded</ParentChildRelationship>
+	<OrigFileName>wbemprox.log</OrigFileName>
+	<VirusName/>
+	<FileSize>299</FileSize>
+	<TrueFileType>ASCII text</TrueFileType>
+</FILE_ANALYZE_REPORT>
+
+<OVERALL_RISK_LEVEL>3</OVERALL_RISK_LEVEL>
+</REPORTS>

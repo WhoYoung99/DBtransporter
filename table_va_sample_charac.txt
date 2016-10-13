@@ -1,0 +1,7 @@
+CREATE TABLE va_sample_charac (
+    FileSHA1 TEXT,
+    violatedPolicyName TEXT,
+    Event TEXT,
+    Details TEXT,
+    image_type TEXT
+);
