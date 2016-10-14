@@ -11,13 +11,13 @@ from copy import deepcopy
 from check_environment import decryptingDump, checkingTools
 from data_dump import ind_finder, leaf_table, readingConfigTable
 from data_extract import pg_restore, root_table, cleanup, dumpFileExtract
-from cmd_tool import exec_cmd
+from tools import *
 from parse_xml import parserXML
 import xml.etree.ElementTree as ET
 
 
 class DatabaseManager(object):
-    def __init__(self, db=':memory:'):
+    def __init__(self, db='TDADB.db'):
         self.conn = lite.connect(db)
         self.conn.execute('pragma foreign_keys = on')
         self.conn.commit()

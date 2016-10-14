@@ -3,27 +3,29 @@
 # Output: list of table dump files
 
 import os
+from data_extract import pg_restore
 from cmd_tool import exec_cmd
+from tools import ind_finder
 
 
-def ind_finder(words, content, reverse=False):
-    '''
-    Find the index of specific words segment
-    return None if words were not found
+# def ind_finder(words, content, reverse=False):
+#     '''
+#     Find the index of specific words segment
+#     return None if words were not found
 
-    Examples: content = ['a', 'aaaab', 'c']
-    ind_finder('a', content) will return 0
-    ind_finder('aa', content) will return 1
-    ind_finder('x', content) will return None
-    '''
-    counter = 0
-    if reverse: content = reversed(content)
-    for line in content:
-        if words in line:
-            return counter
-        else:
-            counter += 1
-    return None
+#     Examples: content = ['a', 'aaaab', 'c']
+#     ind_finder('a', content) will return 0
+#     ind_finder('aa', content) will return 1
+#     ind_finder('x', content) will return None
+#     '''
+#     counter = 0
+#     if reverse: content = reversed(content)
+#     for line in content:
+#         if words in line:
+#             return counter
+#         else:
+#             counter += 1
+#     return None
 
 
 def leaf_table(db_dump_decrypted):
@@ -51,7 +53,7 @@ def leaf_table(db_dump_decrypted):
             print('[Warning] Create folder, start dumping leaves...')
             exec_cmd('mkdir {0}'.format(folder))
             for leaf in leaves[:int(i/2)]:
-                ret = pg_restore(leaf, 'data', folder=folder)
+                ret = pg_restore(leaf, 'data', db_dump_decrypted, folder=folder)
                 if ret:
                     print('[ERROR] Failed to pg_restore {0}'.format(leaf))
                     return ret
@@ -63,7 +65,7 @@ def leaf_table(db_dump_decrypted):
             print('[Warning] Create folder, start dumping leaves...')
             exec_cmd('mkdir {0}'.format(folder))
             for leaf in leaves[int(i/2):]:
-                ret = pg_restore(leaf, 'data', folder=folder)
+                ret = pg_restore(leaf, 'data', db_dump_decrypted, folder=folder)
                 if ret:
                     print('[ERROR] Failed to pg_restore {0}'.format(leaf))
                     return ret

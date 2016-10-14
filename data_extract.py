@@ -1,6 +1,6 @@
 import os
 from cmd_tool import exec_cmd
-from data_dump import ind_finder
+from tools import ind_finder
 
 def pg_restore(table, f_type, dump_name, folder=''):
     '''
