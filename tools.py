@@ -33,3 +33,8 @@ def ind_finder(words, content, reverse=False):
         else:
             counter += 1
     return None
+
+def writing_file(content, fout_name):
+    with open(fout_name, 'w') as file_:
+        file_.writelines(['{0}'.format(line) for line in content])
+    print("Export to: %s" % os.path.join(os.getcwd(), fout_name))

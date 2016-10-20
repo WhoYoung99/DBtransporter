@@ -1,0 +1,8 @@
+CREATE TABLE data_statistics (
+    protocols_analyzed INT,
+    traffic_processed INT,
+    http_requests INT,
+    email_requests INT,
+    dns_requests INT,
+    violatedDetails TEXT
+);

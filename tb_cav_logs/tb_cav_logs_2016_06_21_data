@@ -1,0 +1,31 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.1.9
+-- Dumped by pg_dump version 9.1.9
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET search_path = public, pg_catalog;
+
+--
+-- Data for Name: tb_cav_logs_2016_06_21; Type: TABLE DATA; Schema: public; Owner: root
+--
+
+COPY tb_cav_logs_2016_06_21 (__log_time, __log_utc_time, threattype, protocolgroup, protocol, vlanid, direction, dstip, dstport, dstmac, srcip, srcport, srcmac, domainname, hostname, detectionname, risktypegroup, risktype, filename, fileext, truefiletype, filesize, ruleid, description, confidencelevel, recipient, sender, subject, botcmd, boturl, channelname, nickname, url, username, authentication, useragent, targetshare, detectedby, potentialrisk, hasqfile, qfilepath, filenameinarc, constrainttype, dsthost, srchost, taskid, severity, srcgroup, srczone, dstgroup, dstzone, detectiontype, isblocked, dcehash1, dcehash2, srcuserlogintime1, srcuserlogintime2, dstuserlogintime1, dstuserlogintime2, srcusername2, srcusername3, dstusername1, dstusername2, dstusername3, dstuserlogintime3, srcusername1, srcuserlogintime3, interestedip, peerip, hasdtasres, sha1, resolved, totalcount, aggrcount, srcos, dstos, sha1inarc, ccca_flag, ccca_risklevel, ccca_destinationformat, ccca_destination, ccca_detectionsource, attachmentfilename, attachmentfilesize, attachmentfiletype, attachmentsha1, _, __log_id, ece_severity, attack_phase, attack_phase_num, remarks, cc_server, cc_servertype, malwaretype, event_subclass, heur_flag, filetypeinarc, event_class, common_threat_family, messageid, isipv6, attack_phase2, ecpid, apt_related, apt_group, msbn, longdescription, detectionalias, threatname, ori_id, cveid, apt_campaign, http_referer, clientflag) FROM stdin;
+2016-06-21 10:29:11	2016-06-21 02:29:11	1	6	5	4095	0	82.194.84.120	80	38:2c:4a:65:bc:64	192.168.1.228	58135	c8:60:00:cb:14:c7		82.194.84.120		1	MALWARE			0	0	2103	ENIGMA - Ransomware - HTTP (Request)	1				1072				http://82.194.84.120/images/tuck.php		0	Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.3 (KHTML, like Gecko) Arora/0.11.0 Safari/533.3		42	1	0			0	vlc-220.dns-servicios.com	tw-walttsai3	a8ceef66-09cf-4880-80d3-e0fc9e2c5213	4	Default	1		0	1	0	0	0					\N	\N	\N	\N	\N		\N		192.168.1.228	82.194.84.120	0	\N	0	1	1	Linux x86_64		0000000000000000000000000000000000000000	1	3	2	http://82.194.84.120/images/tuck.php	0	\N	\N	\N	\N		216991	8	Command and Control Communication	3	["URL: http://82.194.84.120/images/tuck.php"]	http://82.194.84.120/images/tuck.php	3	\N	\N	\N	0	\N	\N		0	\N	2103	0	\N	\N	\N	\N	\N	\N	\N	\N		0
+2016-06-21 10:56:38	2016-06-21 02:56:38	1	6	5	4095	0	5.199.164.111	80	38:2c:4a:65:bc:64	192.168.1.228	58174	c8:60:00:cb:14:c7		crazyloading.cc		1	MALWARE			0	0	2106	AUTOLOCKY - Ransomware - HTTP (Request)	1				1072				http://crazyloading.cc/crypt/load.php?bid=programme&hwid=506CStk761RwCq100y		0	Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)		42	1	0			0	hst-5-199-164-111.balticservers.eu	tw-walttsai3	f7f6c986-c4ed-4235-b237-4fb06ca0fa30	4	Default	1		0	1	0	0	0					\N	\N	\N	\N	\N		\N		192.168.1.228	5.199.164.111	0	\N	0	1	1	Windows 7 64bit		0000000000000000000000000000000000000000	1	3	2	http://crazyloading.cc/crypt/load.php?bid=programme&hwid=506CStk761RwCq100y	0	\N	\N	\N	\N		216992	8	Command and Control Communication	3	["URL: http://crazyloading.cc/crypt/load.php?bid=programme&hwid=506CStk761RwCq100y"]	http://crazyloading.cc/crypt/load.php?bid=programme&hwid=506CStk761RwCq100y	3	\N	\N	\N	0	\N	\N		0	\N	2106	0	\N	\N	\N	\N	\N	\N	\N	\N		0
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+

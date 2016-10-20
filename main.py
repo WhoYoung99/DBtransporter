@@ -4,134 +4,144 @@
 import os
 import re
 import sys
+from dbmanager import DatabaseManager
 import sqlite3 as lite
 import subprocess
 import pprint as pp
 from copy import deepcopy
-from check_environment import decryptingDump, checkingTools
-from data_dump import ind_finder, leaf_table, readingConfigTable
-from data_extract import pg_restore, root_table, cleanup, dumpFileExtract
+import decryption
+import extraction
+import restorsion
+# from check_environment import decryptingDump, checkingTools
+# from data_dump import ind_finder, leaf_table, readingConfigTable
+# from data_extract import pg_restore, root_table, cleanup, dumpFileExtract
 from tools import *
 from parse_xml import parserXML
 import xml.etree.ElementTree as ET
 
 
-class DatabaseManager(object):
-    def __init__(self, db='TDADB.db'):
-        self.conn = lite.connect(db)
-        self.conn.execute('pragma foreign_keys = on')
-        self.conn.commit()
-        self.cur = self.conn.cursor()
 
-    def dumping_tb(self, schema, data):
-        # print(''.join(schema))
-        t = ''.join(schema)
-        self.cur.executescript(t)
-        tb_name = schema[0][13:-3]
-        n = len(schema)-2 # Excluding first line 'CREATE TABLE ... (' and last line ');'
-        items = schema[1:-1]
-        # print(items)
-        header = [i.split(' ')[4] for i in items]
-        # print(','.join(header))
-        add_entry = "INSERT INTO {0} ({1}) VALUES ({2})".format(tb_name, ','.join(header), ','.join('?'*n))
-        # print(add_entry)
-        self.cur.executemany(add_entry, data)
-        self.conn.commit()
+DB_OUT = 'TDADB.db'
 
-    def fetching(self, arg):
-        self.cur.execute(arg)
-        return self.cur.fetchall()
+ITEM_LIST_result = ['ParentSHA1', 'FileSHA1', 'FileMD5', 'TrueFileType',
+                    'FileSize', 'OrigFileName', 'GRIDIsKnownGood', 'AnalyzeTime',
+                    'VirusName', 'AnalyzeStartTime', 'ParentChildRelationship'
+                    ]
 
-    def __del__(self):
-        self.conn.close()
+ITEM_LIST_charac = ['FileSHA1', 'violatedPolicyName', 'Event',
+                    'Details', 'image_type'
+                    ]
 
+DETAIL_VALUE = ['AUTH', 'CIFS', 'DHCP', 'DNS Response', 'FTP', 
+                'HTTP', 'ICMP', 'IM', 'IRC', 'LDAP',
+                'P2P', 'POP3', 'Remote Access', 'SMTP', 'SNMP',
+                'SQL', 'TCP', 'TFTP', 'UDP', 'WEBMAIL',
+                'STREAMING', 'VOIP', 'TUNNELING', 'IMAP4', 'DNS Request',
+                'MAIL'
+                ]
 
-def writing_file(content, fout_name):
-    with open(fout_name, 'w') as file_:
-        file_.writelines(['{0}'.format(line) for line in content])
-    print("Export to: %s" % os.path.join(os.getcwd(), fout_name))
-
-
-FILE_IN = 'db_dump.dat'
-FILE_OUT = 'XXXX.dat'
-ITEM_LIST = [
-        'ParentSHA1',
-        'FileSHA1',
-        'FileMD5',
-        'TrueFileType',
-        'FileSize',
-        'OrigFileName',
-        'GRIDIsKnownGood',
-        'AnalyzeTime',
-        'VirusName',
-        'AnalyzeStartTime',
-        'ParentChildRelationship'
-        ]
+DETAIL_KEY = list(range(1, 25)) + [68, 25]
+DETAIL = dict(zip(DETAIL_KEY, DETAIL_VALUE))
 
 
 def main():
+    print('[Initialize] Input DB: {0}; Decrypted DB: {1}'.format(FILE_IN, FILE_OUT))
+
     #
-    ###### Part I: chekc_environment.py ######
+    ###### Part I: decryption.py ######
     #
-    do_decrypt = decryptingDump(FILE_IN, FILE_OUT, decrypt_db_tool='decrypt_db_tool.py')
+
+    do_decrypt = decryption.decryptingDump(FILE_IN, FILE_OUT, decrypt_db_tool='decrypt_db_tool.py')
     assert do_decrypt == 0
 
-    do_install = checkingTools()
+    do_install = decryption.checkingTools()
     assert do_install == 0
 
     #
-    ###### Part II: data_dump.py ######
+    ###### Part II: extraction.py ######
     #
-    tables = readingConfigTable(file_name='ConfigTable.dat')
+    tables = extraction.readingConfigTable(file_name='ConfigTable.dat')
 
-    find_subtables = leaf_table(FILE_OUT)
+    find_subtables = extraction.leafTable(FILE_OUT)
     assert find_subtables == 0
 
+
+
     #
-    ###### Part III: data_extract.py ######
+    ###### Part III: restoration.py ######
     #
-    test = DatabaseManager()
+    db_out_path = os.path.join(os.getcwd(), DB_OUT)
+    if os.path.isfile(db_out_path):
+        os.remove(db_out_path)
+
+    test = DatabaseManager(db=DB_OUT)
 
     with open('table_va_sample_results.txt', 'r') as f:
         va_results_schema = f.readlines()
-    # print(va_results_schema)
+
+    with open('table_va_sample_charac.txt', 'r') as f:
+        va_charac_schema = f.readlines()
+
+    with open('table_data_statistics.txt', 'r') as f:
+        data_statistics_schema = f.readlines()
 
     for table in tables:
         print('[Process] Reading table data: {0}'.format(table))
-        schema, data = dumpFileExtract(table, db_dump=FILE_OUT)
+        schema, data = extraction.dumpFileExtract(table, db_dump=FILE_OUT)
         print('[Process] Create table in SQLite: {0}'.format(table))
-        test.dumping_tb(schema, data)
+        test.restore(schema, data)
         
-        #####
         actual_table = schema[0][13:-3]
-        # query = "SELECT report FROM {0}".format(actual_table)
-        #####
-        # print(query)
-        # raw = test.fetching(query)
-        # data = [i[0].replace('\\n', '') for i in raw]
-        # parse = [parserXML(i, ITEM_LIST, True) for i in data]
-        # va_results_data = [j for i in parse for j in i]
         
-        # test.dumping_tb(va_results_schema, va_results_data)
+        if table == 'tb_sandbox_parent_result':    
+            query = "SELECT report FROM {0}".format(actual_table)
+            raw = test.fetching(query)
+            data = [i[0].replace('\\n', '') for i in raw]
+            parse_all = [parserXML(i, ITEM_LIST_result, True) for i in data]
 
+            parse_result = [i[0] for i in parse_all]
+            parse_charac = [i[1] for i in parse_all]
+            va_results_data = [j for i in parse_result for j in i]
+            va_charac_data = [j for i in parse_charac for j in i]
 
-        # query = "SELECT * FROM {0} LIMIT 1".format(actual_table)
-        # pp.pprint(test.fetching(query))
+            test.restore(va_results_schema, va_results_data)
+            test.restore(va_charac_schema, va_charac_data)
 
+        elif table == 'tb_protocol_request_logs':
+            # query = "SELECT * FROM {0} LIMIT 2".format(actual_table)
+            # pp.pprint(test.fetching(query))
+            query = "SELECT * FROM {0}".format(actual_table)
+            raw = test.fetching(query)
 
+            col1 = [i[0].split(',') for i in raw]
+            protocol_anal = ','.join(list(set([DETAIL[int(j)] for i in col1 for j in i if j != '0'])))
+            print(protocol_anal)
 
-        # query = "SELECT * FROM {0}".format(tb_name)
-        # raw = test.fetching(query)
+            col2 = [i[1] for i in raw]
+            traffic = int(sum(col2)/1024**3)
 
-        # target_col = [i[2].split(',') for i in raw]
-        # DNS = [i[0] for i in target_col]
-        # HTTP = [i[1] for i in target_col]
-        # Email = [i[2] for i in target_col]
-        # sum_DNS = sum([int(re.search(r'\d+', i).group()) for i in DNS])
-        # sum_HTTP = sum([int(re.search(r'\d+', i).group()) for i in HTTP])
-        # sum_Email = sum([int(re.search(r'\d+', i).group()) for i in Email])
-        # pp.pprint([sum_DNS, sum_HTTP, sum_Email])
-        
+            col3 = [i[2].split(',') for i in raw]
+            DNS = [i[0] for i in col3]
+            HTTP = [i[1] for i in col3]
+            Email = [i[2] for i in col3]
+            sum_DNS = int(sum([int(re.search(r'\d+', i).group()) for i in DNS])/1024**2)
+            sum_HTTP = int(sum([int(re.search(r'\d+', i).group()) for i in HTTP])/1024**2)
+            sum_Email = int(sum([int(re.search(r'\d+', i).group()) for i in Email])/1024**2)
+
+            data_statistics_data = [tuple([len(protocol_anal)-1, traffic, sum_HTTP, sum_Email, sum_DNS, protocol_anal])]
+            print(data_statistics_data[0])
+            test.restore(data_statistics_schema, data_statistics_data)
+
 
 if __name__ == '__main__':
-    main()
+    if len(sys.argv) == 1:
+        FILE_IN = 'db_dump.dat'
+        FILE_OUT = 'db_dump_decrypted.dat'
+        main()
+    elif len(sys.argv) == 3:
+        FILE_IN = sys.argv[1]
+        FILE_OUT = sys.argv[2]
+        main()
+    else:
+        error_msg = 'Expecting none or 2 system parameters, {0} recieved...'.format(len(sys.argv)-1)
+        sys.exit(error_msg)

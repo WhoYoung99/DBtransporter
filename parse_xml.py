@@ -1,4 +1,5 @@
 import os
+import pprint as pp
 import xml.etree.ElementTree as ET
 
 
@@ -10,16 +11,33 @@ def parserXML(xml_file, item_list, script=False):
         tree = ET.parse(xml_file)
         root = tree.getroot()
     content = []
+    violation_content = []
+    image_mapping = {}
 
     risk_level = root.find('OVERALL_RISK_LEVEL').text
-    # print(risk_level.text)
+
+    for i in root.findall('IMAGE_TYPE'):
+        for j in i.findall('TYPE'):
+            image_mapping[j.attrib['id']] = j.text
 
     for report in root.findall('FILE_ANALYZE_REPORT'):
-        report_tuple = tuple([risk_level] + [report.find(i).text 
-                        if report.find(i) != None 
-                        else None for i in item_list])
-        content.append(report_tuple)
-    return content
+        image_type = image_mapping[report.attrib['image_type']]
+        report_list = [risk_level] + \
+                      [report.find(i).text if report.find(i) != None 
+                       else None for i in item_list]
+        fileSHA1 = report.find('FileSHA1').text
+        content.append(tuple(report_list))
+        for violation in report.findall('AnalysisViolation'):
+            violatedPolicyName = violation.find('violatedPolicyName').text
+            
+            for evt in violation.findall('AnalysisViolatedEvent'):
+                event = evt.find('Event').text
+                details = evt.find('Details').text
+                violation_list = [fileSHA1, violatedPolicyName, event, details, image_type]
+                violation_content.append(tuple(violation_list))
+                # pp.pprint(violation_content)
+                
+    return content, violation_content
 
 
 if __name__ == '__main__':
@@ -36,6 +54,14 @@ if __name__ == '__main__':
         'VirusName',
         'AnalyzeStartTime',
         'ParentChildRelationship'
+        ]
+
+    item_list_charac = [
+        'FileSHA1',
+        'violatedPolicyName',
+        'Event',
+        'Details',
+        'image_type'
         ]
 
     script = '''<?xml version="1.0" encoding="UTF-8"?>\n
@@ -97,9 +123,11 @@ if __name__ == '__main__':
     \n
     <OVERALL_RISK_LEVEL>-1</OVERALL_RISK_LEVEL>\n</REPORTS>\n
     '''
-    # Testing Case
 
-    a = parserXML(script, item_list, True)
-    print(len(a))
-    print(a)
+    # Testing Case
+    # a, b = parserXML(script, item_list, True)
+    a, b = parserXML(file_name, item_list, False)
+    # print(len(a))
+    # print(a)
+    # print(b)
     # print(a[0])

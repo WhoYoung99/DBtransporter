@@ -1,0 +1,32 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.1.9
+-- Dumped by pg_dump version 9.1.9
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET search_path = public, pg_catalog;
+
+--
+-- Data for Name: tb_tmufe_logs_2016_06_15; Type: TABLE DATA; Schema: public; Owner: root
+--
+
+COPY tb_tmufe_logs_2016_06_15 (__log_time, __log_utc_time, threattype, protocolgroup, protocol, vlanid, direction, dstip, dstport, dstmac, dstgroup, dstzone, srcip, srcport, srcmac, severity, srcgroup, srczone, hostname, description, url, detectedby, score, category, dsthost, srchost, interestedip, peerip, domainname, resolved, sender, recipient, subject, useragent, srcos, dstos, totalcount, aggrcount, ccca_flag, ccca_risklevel, ccca_detectionsource, _, __log_id, ece_severity, attack_phase, attack_phase_num, remarks, cc_server, cc_servertype, event_subclass, attack_phase2, messageid, hidden, isipv6, msbn, longdescription, detectionalias, threatname, event_class, cveid, common_threat_family, apt_related, apt_group, apt_campaign, http_referer, clientflag) FROM stdin;
+2016-06-15 18:01:47	2016-06-15 10:01:47	5	6	5	4095	0	74.125.203.132	80	38:2c:4a:65:bc:64		0	192.168.2.132	51104	28:d2:44:73:b3:4f	1	Default	1	linuxgarage.blogspot.com	New Domain URL in Web Reputation Services database - HTTP (Request)	http://linuxgarage.blogspot.com/2011/11/2-ways-to-generate-random-numbers-in.html	39	71	93	th-in-f132.1e100.net	tw-davidw-nb	192.168.2.132	74.125.203.132	http://linuxgarage.blogspot.com	0				Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36	\N	\N	1	1	\N	\N	\N		4665	1	\N	\N	["URL: http://linuxgarage.blogspot.com/2011/11/2-ways-to-generate-random-numbers-in.html"]	\N	\N	New Domain URL	\N		0	0	\N	\N	\N	\N	Access	\N	\N	0	\N	\N	https://www.google.com.tw/	0
+2016-06-15 19:48:44	2016-06-15 11:48:44	5	6	5	4095	0	52.11.75.170	80	38:2c:4a:65:bc:64		0	192.168.1.228	59545	c8:60:00:cb:14:c7	3	Default	1	canna-cross.com	Dangerous URL in Web Reputation Services database - HTTP (Request)	http://canna-cross.com/wp-content/uploads/2015/05/misc.php?3B7635FC4A66B19D232DB1EB1D31F113EBF96515632199B3ED5C5028997FA61F374C5B03F4842A58B10EFE6CC7DF7CAD85AA909E2979199AA451C54C1018A69DDB09C143E6F42B765E8B64AF74B42A214C831E91AE897E8DDA53BF0A1FADE0680B79B5786E3EB087ECD71BCC49ACFBA5211AA9D1D25AACFC361505A6AF66260	39	49	79	ec2-52-11-75-170.us-west-2.compute.amazonaws.com	tw-walttsai3	192.168.1.228	52.11.75.170	http://canna-cross.com	0				Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko	\N	\N	1	1	\N	\N	\N		4672	6	Point of Entry	2	["URL: http://canna-cross.com/wp-content/uploads/2015/05/misc.php?3B7635FC4A66B19D232DB1EB1D31F113EBF96515632199B3ED5C5028997FA61F374C5B03F4842A58B10EFE6CC7DF7CAD85AA909E2979199AA451C54C1018A69DDB09C143E6F42B765E8B64AF74B42A214C831E91AE897E8DDA53BF0A1FADE0680B79B5786E3EB087ECD71BCC49ACFBA5211AA9D1D25AACFC361505A6AF66260"]	\N	\N	Disease Vector	Command and Control Communication		0	0	\N	\N	\N	\N	Malicious URL	\N	\N	0	\N	\N		0
+2016-06-15 19:48:47	2016-06-15 11:48:47	5	6	5	4095	0	208.91.197.7	80	38:2c:4a:65:bc:64		0	192.168.1.228	59548	c8:60:00:cb:14:c7	3	Default	1	smcarpets.in	Dangerous URL in Web Reputation Services database - HTTP (Request)	http://smcarpets.in/misc.php?3B7635FC4A66B19D232DB1EB1D31F113EBF96515632199B3ED5C5028997FA61F374C5B03F4842A58B10EFE6CC7DF7CAD85AA909E2979199AA451C54C1018A69DDB09C143E6F42B765E8B64AF74B42A214C831E91AE897E8DDA53BF0A1FADE0680B79B5786E3EB087ECD71BCC49ACFBA5211AA9D1D25AACFC361505A6AF66260	39	49	79	208.91.197.7	tw-walttsai3	192.168.1.228	208.91.197.7	http://smcarpets.in	0				Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko	\N	\N	1	1	\N	\N	\N		4673	6	Point of Entry	2	["URL: http://smcarpets.in/misc.php?3B7635FC4A66B19D232DB1EB1D31F113EBF96515632199B3ED5C5028997FA61F374C5B03F4842A58B10EFE6CC7DF7CAD85AA909E2979199AA451C54C1018A69DDB09C143E6F42B765E8B64AF74B42A214C831E91AE897E8DDA53BF0A1FADE0680B79B5786E3EB087ECD71BCC49ACFBA5211AA9D1D25AACFC361505A6AF66260"]	\N	\N	Disease Vector	Command and Control Communication		0	0	\N	\N	\N	\N	Malicious URL	\N	\N	0	\N	\N		0
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+
