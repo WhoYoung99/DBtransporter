@@ -3,7 +3,7 @@
 # Checking required sys tool including: pg_resotre and sqlite3
 import os
 import sys
-from cmd_tool import exec_cmd
+from tools import exec_cmd
 
 
 def decryptingDump(file_in, file_out, decrypt_db_tool='decrypt_db_tool.py'):
@@ -28,6 +28,7 @@ def decryptingDump(file_in, file_out, decrypt_db_tool='decrypt_db_tool.py'):
         else:
             print("[Pass] Finish db_dump decrypting...")
     return ret
+
 
 def checkingTools():
     '''
@@ -54,3 +55,17 @@ def checkingTools():
     else:
         print("[Pass] Required tools checking...")
     return ret
+
+
+def readingConfigTable(file_name='ConfigTable.dat'):
+    file_name_path = os.path.join(os.getcwd(), 'Input', file_name)
+    if not os.path.isfile(file_name_path):
+        sys.exit('[ERROR] Cannot find file {0}, program abort...'.format(file_name_path))
+    else:
+        with open(file_name_path, 'r') as file_:
+            tables = file_.read().split()
+            if tables == []:
+                sys.exit('[ERROR] {0} is empty, program abort...'.format(file_name))
+            else:
+                print("[Pass] Load ConfigTable.dat...")
+                return tables

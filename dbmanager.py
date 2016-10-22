@@ -2,8 +2,8 @@
 import sqlite3 as lite
 
 class DatabaseManager(object):
-    def __init__(self, db='TDADB.db'):
-        self.conn = lite.connect(db)
+    def __init__(self, dbname):
+        self.conn = lite.connect('./Output/{0}'.format(dbname))
         self.conn.execute('pragma foreign_keys = on')
         self.conn.commit()
         self.cur = self.conn.cursor()
