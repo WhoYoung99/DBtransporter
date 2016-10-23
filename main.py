@@ -11,34 +11,34 @@ import pprint as pp
 from copy import deepcopy
 import decryption
 import extraction
-import restorsion
+import restortion
+import conversion
 # from check_environment import decryptingDump, checkingTools
 # from data_dump import ind_finder, leaf_table, readingConfigTable
 # from data_extract import pg_restore, root_table, cleanup, dumpFileExtract
 from tools import *
-from parse_xml import parserXML
 import xml.etree.ElementTree as ET
 
 
-ITEM_LIST_result = ['ParentSHA1', 'FileSHA1', 'FileMD5', 'TrueFileType',
-                    'FileSize', 'OrigFileName', 'GRIDIsKnownGood', 'AnalyzeTime',
-                    'VirusName', 'AnalyzeStartTime', 'ParentChildRelationship'
-                    ]
+# ITEM_LIST_result = ['ParentSHA1', 'FileSHA1', 'FileMD5', 'TrueFileType',
+#                     'FileSize', 'OrigFileName', 'GRIDIsKnownGood', 'AnalyzeTime',
+#                     'VirusName', 'AnalyzeStartTime', 'ParentChildRelationship'
+#                     ]
 
-ITEM_LIST_charac = ['FileSHA1', 'violatedPolicyName', 'Event',
-                    'Details', 'image_type'
-                    ]
+# ITEM_LIST_charac = ['FileSHA1', 'violatedPolicyName', 'Event',
+#                     'Details', 'image_type'
+#                     ]
 
-DETAIL_VALUE = ['AUTH', 'CIFS', 'DHCP', 'DNS Response', 'FTP', 
-                'HTTP', 'ICMP', 'IM', 'IRC', 'LDAP',
-                'P2P', 'POP3', 'Remote Access', 'SMTP', 'SNMP',
-                'SQL', 'TCP', 'TFTP', 'UDP', 'WEBMAIL',
-                'STREAMING', 'VOIP', 'TUNNELING', 'IMAP4', 'DNS Request',
-                'MAIL'
-                ]
+# DETAIL_VALUE = ['AUTH', 'CIFS', 'DHCP', 'DNS Response', 'FTP', 
+#                 'HTTP', 'ICMP', 'IM', 'IRC', 'LDAP',
+#                 'P2P', 'POP3', 'Remote Access', 'SMTP', 'SNMP',
+#                 'SQL', 'TCP', 'TFTP', 'UDP', 'WEBMAIL',
+#                 'STREAMING', 'VOIP', 'TUNNELING', 'IMAP4', 'DNS Request',
+#                 'MAIL'
+#                 ]
 
-DETAIL_KEY = list(range(1, 25)) + [68, 25]
-DETAIL = dict(zip(DETAIL_KEY, DETAIL_VALUE))
+# DETAIL_KEY = list(range(1, 25)) + [68, 25]
+# DETAIL = dict(zip(DETAIL_KEY, DETAIL_VALUE))
 
 
 def main():
@@ -52,7 +52,7 @@ def main():
     do_install = decryption.checkingTools()
     assert do_install == 0
     tables = decryption.readingConfigTable(file_name='ConfigTable.dat')
-    print('ConfigTable: {0}'.format(tables))
+    print('[Initialize] ConfigTable: {0}'.format(tables))
     #
     ## PartII: Extraction ##
     #
@@ -68,12 +68,14 @@ def main():
     if os.path.isfile(db_path):
         os.remove(db_path)
     db = dbmanager.DatabaseManager(DB_OUT)
-    do_restore = restorsion.dumpFileRestore(db)
+    do_restore = restortion.dumpFileRestore(db)
     #
     ## PartIV: Convertion ##
     #
-
-
+    schemas_dict = conversion.readCustomizedSchema('./Input')
+    converting_va = conversion.vaTablesConvertor(db, schemas_dict)
+    converting_protocol = conversion.protocolRequestLogs(db, schemas_dict)
+    
     # test = DatabaseManager(db=DB_OUT)
 
     # with open('table_va_sample_results.txt', 'r') as f:
