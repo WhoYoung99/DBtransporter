@@ -19,6 +19,27 @@ DETAIL_VALUE = ['AUTH', 'CIFS', 'DHCP', 'DNS Response', 'FTP',
                 'MAIL'
                 ]
 
+ITEM_CAV = ['__log_time', 'severity', 'threattype', 'detectionname', 'description',
+            'srcip', 'dstip', 'filename', 'protocolgroup', 'dstport',
+            'domainname', 'hostname', 'ruleid', 'truefiletype', 'filesize',
+            'recipient', 'detectedby', 'filenameinarc', 'interestedip', 'peerip',
+            'hasdtasres', 'sha1', 'sender', 'subject', 'url',
+            'sha1inarc', 'attachmentfilename', 'attachmentfilesize', 'attachmentfiletype', 'attachmentsha1',
+            'ece_severity', 'attack_phase', 'Remarks', 'malwaretype', 'filenameinarc',
+            'common_threat_family', 'messageid', 'apt_group', 'apt_campaign', '""', '""'
+            ]
+
+ITEM_TMUFE = ['__log_time', 'severity', 'threattype', '""', 'description',
+              'srcip', 'dstip', '""', 'protocolgroup', 'dstport', 
+              'domainname', 'hostname', '""', '""', '""',
+              'recipient', 'detectedby', '""', 'interestedip', 'peerip',
+              '""', '""', 'sender', 'subject', 'url',
+              '""', '""', '""', '""', '""',
+              'ece_severity', 'attack_phase', 'Remarks', '""', '""',
+              '""', 'messageid', '""', '""', 'score',
+              'category'
+              ]
+
 DETAIL_KEY = list(range(1, 25)) + [68, 25]
 DETAIL = dict(zip(DETAIL_KEY, DETAIL_VALUE))
 
@@ -106,3 +127,33 @@ def protocolRequestLogs(db_object, schemas_dict):
     print('[Process] Converting - data_statistics...')
     schema = schemas_dict['table_data_statistics.txt']
     db_object.restore(schema, data)
+
+def logTableConvertor(db_object, schemas_dict):
+
+    print('[Process] Converting - log from tb_cav_total_logs...')
+    query = ['SELECT']
+    query.append(', '.join(ITEM_CAV))
+    query.append('FROM tb_cav_total_logs')
+    query = ' '.join(query)
+    raw = db_object.fetching(query)
+    query = 'SELECT CASE WHEN interestedip == srcip THEN srchost ELSE dsthost END FROM tb_cav_total_logs'
+    interestedhostColumn = db_object.fetching(query)
+    data = list(zip(raw, interestedhostColumn))
+    data_cav = [tuple([i for j in before for i in j]) for before in data]
+
+    print('[Process] Converting - log from tb_tmufe_total_logs...')
+    query = ['SELECT']
+    query.append(', '.join(ITEM_TMUFE))
+    query.append('FROM tb_tmufe_total_logs')
+    query = ' '.join(query)
+    raw = db_object.fetching(query)
+    query = 'SELECT CASE WHEN interestedip == srcip THEN srchost ELSE dsthost END FROM tb_tmufe_total_logs'
+    interestedhostColumn = db_object.fetching(query)
+    data = list(zip(raw, interestedhostColumn))
+    data_tmufe = [tuple([i for j in before for i in j]) for before in data]
+
+    schema = schemas_dict['table_log.txt']
+    data = data_cav + data_tmufe
+    db_object.restore(schema, data)
+
+

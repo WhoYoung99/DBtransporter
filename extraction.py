@@ -8,6 +8,11 @@ import shutil
 import tools
 
 
+ROOT = ['tb_cav_total_logs', 'tb_tmufe_total_logs', 'tb_sandbox_result', 'tb_protocol_request_logs']
+TB = ['tb_cav_logs', 'tb_tmufe_logs', 'tb_sandbox_parent_result', 'tb_protocol_request_logs']
+ROOT_DICT = dict(zip(TB, ROOT))
+
+
 def makeDirectory(config):
     '''
     ./DBtransporter
@@ -16,8 +21,7 @@ def makeDirectory(config):
         |
         |-- Output/
         |   |-- ExtractedFiles/
-        |       |-- tb_cav_logs/
-        |       |-- tb_tmufe_logs/
+        |
     '''
     mainpy_path = os.path.dirname(os.path.realpath('main.py'))
     if os.path.exists('./Output'):
@@ -25,10 +29,10 @@ def makeDirectory(config):
         shutil.rmtree('./Output')
     os.makedirs('Output')
     os.makedirs('Output/ExtractedFiles')
-    if 'tb_cav_logs' in config:
-        os.makedirs('Output/ExtractedFiles/tb_cav_logs_data')
-    if 'tb_tmufe_logs' in config:
-        os.makedirs('Output/ExtractedFiles/tb_tmufe_logs_data')
+    # if 'tb_cav_logs' in config:
+    #     os.makedirs('Output/ExtractedFiles/tb_cav_logs_data')
+    # if 'tb_tmufe_logs' in config:
+    #     os.makedirs('Output/ExtractedFiles/tb_tmufe_logs_data')
     print('[Pass] "Output" folder is created successfully...')
         
 
@@ -253,24 +257,42 @@ def dumpFileExtract(table, db_dump, leaves, outpath='./Output/ExtractedFiles'):
     if table in ['tb_sandbox_parent_result', 'tb_protocol_request_logs']:
         pg_data = pg_restore(table, f_type='data', dump_name=db_dump_path, folder=outpath)
     elif table in ['tb_cav_logs', 'tb_tmufe_logs']:
-        outpath_sub = os.path.join(outpath, table+'_data')
-        if os.listdir(outpath_sub) == []:
-            print('[Process] Start dumping {0}-leaves...'.format(table))
-            if table == 'tb_cav_logs':
-                pg_data = sum([pg_restore(leaf, f_type='data', dump_name=db_dump_path, folder=outpath_sub) for leaf in cav_leaves])
-            elif table == 'tb_tmufe_logs':
-                pg_data = sum([pg_restore(leaf, f_type='data', dump_name=db_dump_path, folder=outpath_sub) for leaf in tmufe_leaves])
-            assert pg_data == 0
-        else:
-            pg_data = -1
-            print('[Warning] {0} folder is not empty, skip dumping leaves...'.format(table))
+
+        if table == 'tb_cav_logs':
+            arg = makeArg('tb_cav_logs_data', cav_leaves, db_dump_path)
+        elif table == 'tb_tmufe_logs':
+            arg = makeArg('tb_tmufe_logs_data', tmufe_leaves, db_dump_path)
+        pg_data = tools.exec_cmd(arg, debug=True)
+
+
+        # outpath_sub = os.path.join(outpath, table+'_data')
+        # if os.listdir(outpath_sub) == []:
+        #     print('[Process] Start dumping {0}-leaves...'.format(table))
+        #     if table == 'tb_cav_logs':
+        #         # pg_data = sum([pg_restore(leaf, f_type='data', dump_name=db_dump_path, folder=outpath_sub) for leaf in cav_leaves])
+        #         arg = makeArg('tb_cav_logs_data', cav_leaves, db_dump_path)
+        #         pg_data = tools.exec_cmd(arg, debug=True)
+        #     elif table == 'tb_tmufe_logs':
+        #         arg = makeArg('tb_tmufe_logs_data', tmufe_leaves, db_dump_path)
+        #         pg_data = tools.exec_cmd(arg, debug=True)
+        #         # pg_data = sum([pg_restore(leaf, f_type='data', dump_name=db_dump_path, folder=outpath_sub) for leaf in tmufe_leaves])
+        #     assert pg_data == 0
+        # else:
+        #     pg_data = -1
+        #     print('[Warning] {0} folder is not empty, skip dumping leaves...'.format(table))
     else:
         pg_data = -99
         print('[ERROR] Unrecognized table name: {0}'.format(table))
     return pg_schema + pg_data
         
 
-
+def makeArg(name, leaves, db_dump):
+    command = ['pg_restore']
+    for leaf in leaves:
+        command.append('-t')
+        command.append(leaf)
+    command.extend(['-a', '-f', './Output/ExtractedFiles/{0}'.format(name), db_dump])
+    return ' '.join(command)
 
 
 

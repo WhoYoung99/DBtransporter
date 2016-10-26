@@ -82,6 +82,15 @@ def cleanup(table, f_type=None, folder=''):
         print("Please enter file type, return nothing...")
         return None
 
+def cleanup2(file):
+    data = []
+    with open(file, 'r') as f:
+        for line in f:
+            if line.startswith('2016-'):
+                data.append(line)
+    data = [tuple(i.split('\t')) for i in data]
+    return data
+
 
 # def dumpFileExtract(table, db_dump):
 #     # table_name = '{0}_schema'.format(table)
@@ -130,14 +139,21 @@ def dumpFileRestore(db_object, extract_path='./Output/ExtractedFiles'):
         print('[Process] Restoring table - {0}'.format(schema_list[i]))
         schema = cleanup(schema_list[i], folder=extract_path)
         # print(''.join(schema))
-        
+
         full_path = os.path.join(extract_path, data_list[i])
-        if os.path.isdir(full_path):
-            data = aggregation(full_path)
+        # if os.path.isdir(full_path):
+        #     data = aggregation(full_path)
+        # else:
+        #     data = cleanup(data_list[i], folder=extract_path)
+        #     data = [tuple(i.split('\t')) for i in data]
+        if data_list[i] == 'tb_cav_logs_data':
+            data = cleanup2('./Output/ExtractedFiles/tb_cav_logs_data')
+        elif data_list[i] == 'tb_tmufe_logs_data':
+            data = cleanup2('./Output/ExtractedFiles/tb_tmufe_logs_data')
         else:
             data = cleanup(data_list[i], folder=extract_path)
             data = [tuple(i.split('\t')) for i in data]
-        # pp.pprint(data[0:2])
+
         db_object.restore(schema, data)
 
 def aggregation(folder_path):

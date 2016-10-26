@@ -75,6 +75,7 @@ def main():
     schemas_dict = conversion.readCustomizedSchema('./Input')
     converting_va = conversion.vaTablesConvertor(db, schemas_dict)
     converting_protocol = conversion.protocolRequestLogs(db, schemas_dict)
+    converting_logs = conversion.logTableConvertor(db, schemas_dict)
     
     # test = DatabaseManager(db=DB_OUT)
 
