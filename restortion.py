@@ -70,7 +70,7 @@ def cleanup(table, f_type=None, folder=''):
             clean_data[-2] = ''.join(clean_data[-2].split(',')) # Delete the comma
         # Remove brackets
         clean_data = [l.replace('[]', '') for l in clean_data]
-        clean_data = [l.replace('hstore', 'text') for l in clean_data]
+        # clean_data = [l.replace('hstore', 'text') for l in clean_data]
         return clean_data
 
     elif f_type == 'data':
