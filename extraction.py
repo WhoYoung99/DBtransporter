@@ -28,7 +28,7 @@ def makeDirectory(config):
         print('[Warning] "Output" Directory has already existed.')
         shutil.rmtree('./Output')
     os.makedirs('Output')
-    os.makedirs('Output/ExtractedFiles')
+    # os.makedirs('Output/ExtractedFiles')
     # if 'tb_cav_logs' in config:
     #     os.makedirs('Output/ExtractedFiles/tb_cav_logs_data')
     # if 'tb_tmufe_logs' in config:
